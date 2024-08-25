@@ -1,0 +1,1369 @@
+fileFormatVersion: 2
+guid: dbfb835eed0163d4fa4f66640ca96dcf
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 145
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f90ff06198270c4393d0ad4bec5852f
+      internalID: -1083980783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_1
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 145
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 129002dba068cee4f833ce54bec2915e
+      internalID: -135165041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_2
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 145
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 261864091bcfb3b4c8b7f0cae9065769
+      internalID: 310655481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_3
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 145
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f83099c6fa7a494448641cd253d3b077
+      internalID: -1256966739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_4
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 145
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba56376832bf5a9418802cfad6e47260
+      internalID: 1037855124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_5
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 145
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 821d88d301709924480aa80d357ddd89
+      internalID: -843270177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_6
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 133
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00a2ec4ebd6b93645bee6beaa9a01afd
+      internalID: -1738822472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_7
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 133
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8453dcde51724cc4388f8ca44045b283
+      internalID: 1078940374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_8
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 133
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c227c6614727d7f45980e26044604d12
+      internalID: -1271925795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_9
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 120
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb6ef24ce4917ed45b995c321d916d7e
+      internalID: -315885139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_10
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 120
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f04f98f75709e9c4686c105484aaffd3
+      internalID: 208740496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_11
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 120
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbf007b0e6987ed47b2455015bd45012
+      internalID: -302852679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_12
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 120
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f7824e15c15bc4cb34d432a222f269
+      internalID: 991739801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_13
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 120
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d09b349fd0bc07f4ea2e484f83a81a26
+      internalID: -1165455862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_14
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 120
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3a2d4cf54c133a44981b397f51aca19
+      internalID: 1173543208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_15
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 120
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e69fcf605884c0a4baddb97cd2d3bd94
+      internalID: -601224447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_16
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 102
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1b6cf7a63d11994bb11e1fffef5f981
+      internalID: -2036861812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_17
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 102
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 749179e3c87411b4d9ee8d21c3164df8
+      internalID: -154281214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_18
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 102
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cec733cb452a9549a1110c3559d746d
+      internalID: -732693650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_19
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 102
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24325aa870a13bf49aaa39af79588ef0
+      internalID: -996861497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_20
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 102
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95634900d6a0e9f40ae188cb8b08da0c
+      internalID: 186452080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_21
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 102
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd8d7266fc767ba4da862dc71314e29a
+      internalID: -306973656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_22
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a496e4ab830a5d4cb5326def1c1a1ac
+      internalID: 152865845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_23
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5be8a37abc91c2342bbb4a90872f5aac
+      internalID: 115724280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_24
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 72
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c231447be4295145874439dd7bd8201
+      internalID: 1003020133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_25
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 72
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 866da7bc7443a74499086695a2e63636
+      internalID: -641765832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_26
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 72
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b19fd579b733dab4090ee0415f3977bb
+      internalID: 1830545665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_27
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 72
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13036108d13ec23448a9396de3501366
+      internalID: 1295618986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_28
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 72
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7ad2d3fbb2b9a14588dea0c08cbdd67
+      internalID: 733665353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_29
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 72
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f096c03de39ed0479adb03f2bfbf5b4
+      internalID: -252160942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_30
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 72
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83c930dc72fb9114fa4fb5f3efa42b9a
+      internalID: 720793554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_31
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 72
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2bd49962929dfa4ab4989096331121e
+      internalID: -337019916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_32
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 58
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e13856e17ffa42c4184b6c5e7aa94389
+      internalID: 823782955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_33
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 58
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f70f24e4a3431cf42a7c675d410dfb26
+      internalID: -141147201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_34
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 58
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e74bfdf0446e2cb4fa37ad67d2a8ddf1
+      internalID: -1248419652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_35
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 58
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f22874547449248acbaa49c61d1909
+      internalID: 174390586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_36
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 58
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1d2a55d48fd81748a94a93c0bc77a91
+      internalID: -674278789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_37
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 58
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d8b82fb22950b469b6cfea7bc7f792
+      internalID: -436565609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_38
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 42
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e47851e41ab428f448527dba3db9849b
+      internalID: 1522602224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_39
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 42
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abac7b4cfbbc2274fb69391e1088a925
+      internalID: 521662815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_40
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 42
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c159666503b511448f243e71e169af3
+      internalID: 499104522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_41
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 42
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d154237d2ed4946874bb9d1ddb1a3f
+      internalID: -714739438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_42
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 42
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9afa501fd585a041b5cdab2893ad8e5
+      internalID: 1140612197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_43
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 42
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c29480089e0f975409821a1e00288947
+      internalID: 733467725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_44
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 42
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 415df491d54b4054c8ebaea5cde51063
+      internalID: -378746199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_45
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 42
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1272c3a70fb40864e99330238e02c113
+      internalID: 354423443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_46
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 42
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 441e36379c39a6746ac5bc1b6863a2c5
+      internalID: -60691275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_47
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 24
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70f7e4f4d10779d458c589d85389e847
+      internalID: 660459450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_48
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 24
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88a06226e74d9f54e89e351d5757cbaa
+      internalID: 288968869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_49
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 24
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0678c2ec411da4144a4bc9d31249949a
+      internalID: -37111327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_50
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 24
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a082d3203d5f25943bb52b9f294cae52
+      internalID: 1379846084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_51
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 24
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d35386eaedade17448d5ad4f728bbde7
+      internalID: 1791576244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_52
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 24
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25bfa378905b37946a43c526043b7d51
+      internalID: 329394861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_53
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 24
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c3103b1596ed634cbdf3fbb5940ee48
+      internalID: 125202548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Bugs_54
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 9
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 196a28631dc6fd948ab48f96eac3e415
+      internalID: -577333494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PC Computer - Forager - Bugs_0: -1083980783
+      PC Computer - Forager - Bugs_1: -135165041
+      PC Computer - Forager - Bugs_10: 208740496
+      PC Computer - Forager - Bugs_11: -302852679
+      PC Computer - Forager - Bugs_12: 991739801
+      PC Computer - Forager - Bugs_13: -1165455862
+      PC Computer - Forager - Bugs_14: 1173543208
+      PC Computer - Forager - Bugs_15: -601224447
+      PC Computer - Forager - Bugs_16: -2036861812
+      PC Computer - Forager - Bugs_17: -154281214
+      PC Computer - Forager - Bugs_18: -732693650
+      PC Computer - Forager - Bugs_19: -996861497
+      PC Computer - Forager - Bugs_2: 310655481
+      PC Computer - Forager - Bugs_20: 186452080
+      PC Computer - Forager - Bugs_21: -306973656
+      PC Computer - Forager - Bugs_22: 152865845
+      PC Computer - Forager - Bugs_23: 115724280
+      PC Computer - Forager - Bugs_24: 1003020133
+      PC Computer - Forager - Bugs_25: -641765832
+      PC Computer - Forager - Bugs_26: 1830545665
+      PC Computer - Forager - Bugs_27: 1295618986
+      PC Computer - Forager - Bugs_28: 733665353
+      PC Computer - Forager - Bugs_29: -252160942
+      PC Computer - Forager - Bugs_3: -1256966739
+      PC Computer - Forager - Bugs_30: 720793554
+      PC Computer - Forager - Bugs_31: -337019916
+      PC Computer - Forager - Bugs_32: 823782955
+      PC Computer - Forager - Bugs_33: -141147201
+      PC Computer - Forager - Bugs_34: -1248419652
+      PC Computer - Forager - Bugs_35: 174390586
+      PC Computer - Forager - Bugs_36: -674278789
+      PC Computer - Forager - Bugs_37: -436565609
+      PC Computer - Forager - Bugs_38: 1522602224
+      PC Computer - Forager - Bugs_39: 521662815
+      PC Computer - Forager - Bugs_4: 1037855124
+      PC Computer - Forager - Bugs_40: 499104522
+      PC Computer - Forager - Bugs_41: -714739438
+      PC Computer - Forager - Bugs_42: 1140612197
+      PC Computer - Forager - Bugs_43: 733467725
+      PC Computer - Forager - Bugs_44: -378746199
+      PC Computer - Forager - Bugs_45: 354423443
+      PC Computer - Forager - Bugs_46: -60691275
+      PC Computer - Forager - Bugs_47: 660459450
+      PC Computer - Forager - Bugs_48: 288968869
+      PC Computer - Forager - Bugs_49: -37111327
+      PC Computer - Forager - Bugs_5: -843270177
+      PC Computer - Forager - Bugs_50: 1379846084
+      PC Computer - Forager - Bugs_51: 1791576244
+      PC Computer - Forager - Bugs_52: 329394861
+      PC Computer - Forager - Bugs_53: 125202548
+      PC Computer - Forager - Bugs_54: -577333494
+      PC Computer - Forager - Bugs_6: -1738822472
+      PC Computer - Forager - Bugs_7: 1078940374
+      PC Computer - Forager - Bugs_8: -1271925795
+      PC Computer - Forager - Bugs_9: -315885139
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
