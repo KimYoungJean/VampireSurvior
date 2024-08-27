@@ -125,18 +125,6 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -155,8 +143,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f235ef197984f4e46b235074fa8f0bc4
-      internalID: -852843643
+      spriteID: 3365720aab7e3f245b1691340c5aec09
+      internalID: 336153612
       vertices: []
       indices: 
       edges: []
@@ -166,9 +154,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 9
-        y: 237
-        width: 10
-        height: 10
+        y: 234
+        width: 22
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,8 +164,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 524dc0a41c2a45c46bf8bc1d3aa9b6a1
-      internalID: -858241475
+      spriteID: 2dbad64ab3914574c8a1251311399b73
+      internalID: -743520372
       vertices: []
       indices: 
       edges: []
@@ -186,10 +174,10 @@ TextureImporter:
       name: PC Computer - Forager - Wizrob_2
       rect:
         serializedVersion: 2
-        x: 21
+        x: 33
         y: 237
-        width: 10
-        height: 10
+        width: 35
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,35 +185,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3360230fd2beb24ba1e3a0c8984a3ba
-      internalID: 1203471714
+      spriteID: c49290d93459c974d9625a73f64ad336
+      internalID: 1410981081
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
       name: PC Computer - Forager - Wizrob_3
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 237
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7be01fcfef23e5744878d38bb007f140
-      internalID: -1075695942
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PC Computer - Forager - Wizrob_4
       rect:
         serializedVersion: 2
         x: 4
@@ -239,14 +206,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49a4acd93cc304b498c258e655791d49
-      internalID: 195057727
+      spriteID: f2dc92ca5e4e1a54b9416a9834e9e1e1
+      internalID: -2070225390
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Forager - Wizrob_5
+      name: PC Computer - Forager - Wizrob_4
       rect:
         serializedVersion: 2
         x: 22
@@ -260,14 +227,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1cf22711e7f8a6b47b7886f51dc3fd18
-      internalID: -1103254543
+      spriteID: df88d5dec4be5b04892f6229edf537ea
+      internalID: -888936149
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Forager - Wizrob_6
+      name: PC Computer - Forager - Wizrob_5
       rect:
         serializedVersion: 2
         x: 34
@@ -281,14 +248,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed0cce1855e936848b2fc7ff73884801
-      internalID: 241143348
+      spriteID: f0422b42133d97346a1ad7daed3e89d5
+      internalID: 1945296802
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Forager - Wizrob_7
+      name: PC Computer - Forager - Wizrob_6
       rect:
         serializedVersion: 2
         x: 52
@@ -302,20 +269,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8fbcf362a74562e4f8cb7f0738067f81
-      internalID: 360966258
+      spriteID: 499e08732a15a2c489c3618b825d2ecf
+      internalID: -1456237866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Forager - Wizrob_8
+      name: PC Computer - Forager - Wizrob_7
       rect:
         serializedVersion: 2
         x: 65
         y: 191
         width: 17
-        height: 29
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,14 +290,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78c1662725927bf4f907811995d3506c
-      internalID: 377629755
+      spriteID: 406c98800daa43942a7010f6123c06f6
+      internalID: 401707167
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Forager - Wizrob_9
+      name: PC Computer - Forager - Wizrob_8
       rect:
         serializedVersion: 2
         x: 83
@@ -344,14 +311,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ead79203163b50542a65d68648c8f511
-      internalID: 1993840721
+      spriteID: bfda0fce5dfa8b1468c74446c612bca7
+      internalID: -29430920
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Forager - Wizrob_10
+      name: PC Computer - Forager - Wizrob_9
       rect:
         serializedVersion: 2
         x: 5
@@ -365,14 +332,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc68acf1c10d7ae4ea0bb8a83e1111c2
-      internalID: -2059197264
+      spriteID: 052c6812ba018474d8e84f3faab71162
+      internalID: 359835232
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Forager - Wizrob_11
+      name: PC Computer - Forager - Wizrob_10
       rect:
         serializedVersion: 2
         x: 23
@@ -386,14 +353,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89fc13fbf61300f41ba62e8a753ae61e
-      internalID: 345356101
+      spriteID: 80dcf51ff372aa7429781a9d7e87605e
+      internalID: -345506238
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Forager - Wizrob_12
+      name: PC Computer - Forager - Wizrob_11
       rect:
         serializedVersion: 2
         x: 34
@@ -407,14 +374,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a3955184628fb24989ddd22cfdca458
-      internalID: -2113547303
+      spriteID: cfa9ff185ada16d47b68e2452b9393d1
+      internalID: 339743048
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Forager - Wizrob_13
+      name: PC Computer - Forager - Wizrob_12
       rect:
         serializedVersion: 2
         x: 52
@@ -428,14 +395,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f76294e1b34cfe446bb667a3b68db62b
-      internalID: 826708077
+      spriteID: 40548d60d7d89dc4ea4ac0caf1d6a0a8
+      internalID: 1590179392
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Forager - Wizrob_14
+      name: PC Computer - Forager - Wizrob_13
       rect:
         serializedVersion: 2
         x: 63
@@ -449,14 +416,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1244a67505b1bf043897c7ab2e9f43ff
-      internalID: 858642032
+      spriteID: 8b0588b1d5f77654e963f54b2b69b780
+      internalID: -1386022687
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Forager - Wizrob_15
+      name: PC Computer - Forager - Wizrob_14
       rect:
         serializedVersion: 2
         x: 81
@@ -470,14 +437,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fb2ec03a0dbec145830cae8e468832f
-      internalID: -56282820
+      spriteID: 574f697f81090e043a1a212a436630d4
+      internalID: 149000906
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Forager - Wizrob_16
+      name: PC Computer - Forager - Wizrob_15
       rect:
         serializedVersion: 2
         x: 6
@@ -491,14 +458,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5de6f2f7919013f4ba5e7e7da7efd9bc
-      internalID: 1651494877
+      spriteID: dd51f52cc5085714abf0a0bc93705c15
+      internalID: 2032814694
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Forager - Wizrob_17
+      name: PC Computer - Forager - Wizrob_16
       rect:
         serializedVersion: 2
         x: 24
@@ -512,14 +479,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92a1e5d97c8f88f4ab8c707aee1ade9b
-      internalID: -1656919362
+      spriteID: ede306d906afad540ae7d9439657cece
+      internalID: 334609823
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Forager - Wizrob_18
+      name: PC Computer - Forager - Wizrob_17
       rect:
         serializedVersion: 2
         x: 38
@@ -533,14 +500,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 624291057ee89c142ae50de57ee0155f
-      internalID: 1323873036
+      spriteID: 3de2a2dd395a9634895a22f043c3602a
+      internalID: -1579569304
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Forager - Wizrob_19
+      name: PC Computer - Forager - Wizrob_18
       rect:
         serializedVersion: 2
         x: 56
@@ -554,8 +521,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 521f1d3f3f1a8554581150ff03b9f780
-      internalID: -2100492909
+      spriteID: fda182a51f27b2e41ba9dad4cf6cfe3a
+      internalID: -1298751757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Wizrob_19
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 84
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38013334043f8304d9c008a82876a17b
+      internalID: 1442565740
       vertices: []
       indices: 
       edges: []
@@ -564,10 +552,10 @@ TextureImporter:
       name: PC Computer - Forager - Wizrob_20
       rect:
         serializedVersion: 2
-        x: 7
-        y: 91
-        width: 10
-        height: 10
+        x: 31
+        y: 90
+        width: 22
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -575,8 +563,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09b34193574442846a6c20de38315d3e
-      internalID: 514559512
+      spriteID: b64bc9411f615014f9597cef83c013d3
+      internalID: -700864771
       vertices: []
       indices: 
       edges: []
@@ -585,10 +573,10 @@ TextureImporter:
       name: PC Computer - Forager - Wizrob_21
       rect:
         serializedVersion: 2
-        x: 19
-        y: 91
-        width: 10
-        height: 10
+        x: 48
+        y: 11
+        width: 45
+        height: 91
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -596,56 +584,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81f613d8a9e524a48aafd330ed65f34c
-      internalID: 956088244
+      spriteID: b1a349cf0eb17ac4b8b98c0d553896c5
+      internalID: -1025209459
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
       name: PC Computer - Forager - Wizrob_22
-      rect:
-        serializedVersion: 2
-        x: 31
-        y: 91
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f9a087b8c59c771488da2254cb108265
-      internalID: 414863155
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PC Computer - Forager - Wizrob_23
-      rect:
-        serializedVersion: 2
-        x: 43
-        y: 91
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f807abcecafbca6479e8c6974c73e7eb
-      internalID: -1458415392
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PC Computer - Forager - Wizrob_24
       rect:
         serializedVersion: 2
         x: 7
@@ -659,8 +605,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb1ac36b4e6a54d42afdb85aaca85e07
-      internalID: -1285725614
+      spriteID: 26eae5dfbba38ec4893a8b977695da32
+      internalID: 1387275958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Wizrob_23
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 33
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce3b784ff79dd984bae2f33630df0363
+      internalID: -1833335265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Forager - Wizrob_24
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 42
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c412ed92336db594f8f643319c0799e9
+      internalID: -1041311243
       vertices: []
       indices: 
       edges: []
@@ -669,10 +657,10 @@ TextureImporter:
       name: PC Computer - Forager - Wizrob_25
       rect:
         serializedVersion: 2
-        x: 4
-        y: 42
-        width: 10
-        height: 10
+        x: 8
+        y: 6
+        width: 8
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -680,8 +668,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd9bd3eedae34564a896771865c4b4ee
-      internalID: -1952169046
+      spriteID: 29af105fbeff286458cc33adc2cddcdf
+      internalID: 1331187140
       vertices: []
       indices: 
       edges: []
@@ -690,10 +678,10 @@ TextureImporter:
       name: PC Computer - Forager - Wizrob_26
       rect:
         serializedVersion: 2
-        x: 16
-        y: 42
-        width: 10
-        height: 10
+        x: 36
+        y: 18
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -701,92 +689,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f63042a9fc5b944a885d68a010f313d
-      internalID: -1596262387
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PC Computer - Forager - Wizrob_27
-      rect:
-        serializedVersion: 2
-        x: 28
-        y: 42
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 996ab30917a4c0f4086960fbedf91677
-      internalID: -2135086838
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PC Computer - Forager - Wizrob_28
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 42
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d17b2fe24a4682f448cf903f8cdc715a
-      internalID: -853268015
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PC Computer - Forager - Wizrob_29
-      rect:
-        serializedVersion: 2
-        x: 52
-        y: 42
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b32a1b83ba1c204abad86a31a7de603
-      internalID: 1959544818
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PC Computer - Forager - Wizrob_30
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 6
-        width: 8
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5a836d3405fce9b4e8f53883d0990183
-      internalID: 688951514
+      spriteID: 9e05064b133a7f84e9b5aefde5c05582
+      internalID: -1437509540
       vertices: []
       indices: 
       edges: []
@@ -802,37 +706,33 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PC Computer - Forager - Wizrob_0: -852843643
-      PC Computer - Forager - Wizrob_1: -858241475
-      PC Computer - Forager - Wizrob_10: -2059197264
-      PC Computer - Forager - Wizrob_11: 345356101
-      PC Computer - Forager - Wizrob_12: -2113547303
-      PC Computer - Forager - Wizrob_13: 826708077
-      PC Computer - Forager - Wizrob_14: 858642032
-      PC Computer - Forager - Wizrob_15: -56282820
-      PC Computer - Forager - Wizrob_16: 1651494877
-      PC Computer - Forager - Wizrob_17: -1656919362
-      PC Computer - Forager - Wizrob_18: 1323873036
-      PC Computer - Forager - Wizrob_19: -2100492909
-      PC Computer - Forager - Wizrob_2: 1203471714
-      PC Computer - Forager - Wizrob_20: 514559512
-      PC Computer - Forager - Wizrob_21: 956088244
-      PC Computer - Forager - Wizrob_22: 414863155
-      PC Computer - Forager - Wizrob_23: -1458415392
-      PC Computer - Forager - Wizrob_24: -1285725614
-      PC Computer - Forager - Wizrob_25: -1952169046
-      PC Computer - Forager - Wizrob_26: -1596262387
-      PC Computer - Forager - Wizrob_27: -2135086838
-      PC Computer - Forager - Wizrob_28: -853268015
-      PC Computer - Forager - Wizrob_29: 1959544818
-      PC Computer - Forager - Wizrob_3: -1075695942
-      PC Computer - Forager - Wizrob_30: 688951514
-      PC Computer - Forager - Wizrob_4: 195057727
-      PC Computer - Forager - Wizrob_5: -1103254543
-      PC Computer - Forager - Wizrob_6: 241143348
-      PC Computer - Forager - Wizrob_7: 360966258
-      PC Computer - Forager - Wizrob_8: 377629755
-      PC Computer - Forager - Wizrob_9: 1993840721
+      PC Computer - Forager - Wizrob_0: 336153612
+      PC Computer - Forager - Wizrob_1: -743520372
+      PC Computer - Forager - Wizrob_10: -345506238
+      PC Computer - Forager - Wizrob_11: 339743048
+      PC Computer - Forager - Wizrob_12: 1590179392
+      PC Computer - Forager - Wizrob_13: -1386022687
+      PC Computer - Forager - Wizrob_14: 149000906
+      PC Computer - Forager - Wizrob_15: 2032814694
+      PC Computer - Forager - Wizrob_16: 334609823
+      PC Computer - Forager - Wizrob_17: -1579569304
+      PC Computer - Forager - Wizrob_18: -1298751757
+      PC Computer - Forager - Wizrob_19: 1442565740
+      PC Computer - Forager - Wizrob_2: 1410981081
+      PC Computer - Forager - Wizrob_20: -700864771
+      PC Computer - Forager - Wizrob_21: -1025209459
+      PC Computer - Forager - Wizrob_22: 1387275958
+      PC Computer - Forager - Wizrob_23: -1833335265
+      PC Computer - Forager - Wizrob_24: -1041311243
+      PC Computer - Forager - Wizrob_25: 1331187140
+      PC Computer - Forager - Wizrob_26: -1437509540
+      PC Computer - Forager - Wizrob_3: -2070225390
+      PC Computer - Forager - Wizrob_4: -888936149
+      PC Computer - Forager - Wizrob_5: 1945296802
+      PC Computer - Forager - Wizrob_6: -1456237866
+      PC Computer - Forager - Wizrob_7: 401707167
+      PC Computer - Forager - Wizrob_8: -29430920
+      PC Computer - Forager - Wizrob_9: 359835232
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
