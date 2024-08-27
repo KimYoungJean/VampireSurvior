@@ -49,7 +49,7 @@ public class SceneManager : MonoBehaviour
                 loadingBar.value = asyncLoad.progress;
                 loadingText.text = (asyncLoad.progress * 100).ToString("0") + "%";
             }
-             
+
         }
         Debug.Log("로딩 완료");
     }
