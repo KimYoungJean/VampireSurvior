@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     Vector2 MoveDirection = Vector2.zero;
-    float MoveSpeed = 5f;
+    float MoveSpeed = 2f;
 
     private void Start()
     {
@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        UpdateInput();
+        //UpdateInput();
         Move();
     }
     void UpdateInput()
@@ -51,6 +51,13 @@ public class PlayerController : MonoBehaviour
 
     void Move()
     {
+        MoveDirection = GameManager.Instance.MoveDir;
+        if (MoveDirection.x<0)
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else { GetComponent<SpriteRenderer>().flipX = false;}
+
         transform.Translate(MoveDirection * MoveSpeed * Time.deltaTime);
     }
 }

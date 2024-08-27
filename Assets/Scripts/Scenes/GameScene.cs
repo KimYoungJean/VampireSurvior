@@ -8,9 +8,11 @@ public class GameScene : MonoBehaviour
     public GameObject goblinPrefab;
     public GameObject chickenPrefab;
     public GameObject wizardPrefab;
+    public GameObject joystickPrefab;
 
     public GameObject Player;
     private GameObject player;
+    GameObject joystick;
 
     private void Awake()
     {
@@ -23,7 +25,8 @@ public class GameScene : MonoBehaviour
         GameObject goblin = Instantiate(goblinPrefab);
         GameObject chicken = Instantiate(chickenPrefab);
         GameObject wizard = Instantiate(wizardPrefab);
-        
+
+        joystick = Instantiate(joystickPrefab);       
 
 
         
