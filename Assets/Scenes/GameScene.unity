@@ -135,7 +135,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5305635753082073950, guid: 2cf38a39650abc84e88c5a98af03c82d, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5305635753082073950, guid: 2cf38a39650abc84e88c5a98af03c82d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -179,79 +179,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cf38a39650abc84e88c5a98af03c82d, type: 3}
---- !u!1001 &1956100927
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4549146981956329380, guid: 96ab056e19514bf4abf22531dcaf0757, type: 3}
-      propertyPath: m_Name
-      value: PC Computer - Forager - Chicken_4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4549146981956329385, guid: 96ab056e19514bf4abf22531dcaf0757, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4549146981956329385, guid: 96ab056e19514bf4abf22531dcaf0757, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4549146981956329385, guid: 96ab056e19514bf4abf22531dcaf0757, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4549146981956329385, guid: 96ab056e19514bf4abf22531dcaf0757, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4549146981956329385, guid: 96ab056e19514bf4abf22531dcaf0757, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.73
-      objectReference: {fileID: 0}
-    - target: {fileID: 4549146981956329385, guid: 96ab056e19514bf4abf22531dcaf0757, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.45
-      objectReference: {fileID: 0}
-    - target: {fileID: 4549146981956329385, guid: 96ab056e19514bf4abf22531dcaf0757, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4549146981956329385, guid: 96ab056e19514bf4abf22531dcaf0757, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4549146981956329385, guid: 96ab056e19514bf4abf22531dcaf0757, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4549146981956329385, guid: 96ab056e19514bf4abf22531dcaf0757, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4549146981956329385, guid: 96ab056e19514bf4abf22531dcaf0757, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4549146981956329385, guid: 96ab056e19514bf4abf22531dcaf0757, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4549146981956329385, guid: 96ab056e19514bf4abf22531dcaf0757, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4549146981956329385, guid: 96ab056e19514bf4abf22531dcaf0757, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4549146981956329386, guid: 96ab056e19514bf4abf22531dcaf0757, type: 3}
-      propertyPath: m_SortingOrder
-      value: 5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 96ab056e19514bf4abf22531dcaf0757, type: 3}
 --- !u!1 &1974161736
 GameObject:
   m_ObjectHideFlags: 0
