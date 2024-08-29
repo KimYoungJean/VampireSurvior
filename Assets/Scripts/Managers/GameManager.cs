@@ -19,7 +19,8 @@ public class GameManager : MonoBehaviour
         set
         {
             moveDir = value;
-            onMoveDirChanged?.Invoke(moveDir);
+
+            onMoveDirChanged?.Invoke(moveDir); 
         }
     }
 

@@ -17,9 +17,15 @@ public class PlayerController : MonoBehaviour
     }
     void HandleMoveDirChanged(Vector2 dir)
     {
+        Debug.Log("MoveDirChanged");
         MoveDirection = dir;
     }
 
+    private void OnDestroy()
+    {
+        if(GameManager.Instance != null) 
+            GameManager.Instance.onMoveDirChanged -= HandleMoveDirChanged;
+    }
     private void Update()
     {
       
@@ -28,7 +34,7 @@ public class PlayerController : MonoBehaviour
 
     void Move()
     {
-        MoveDirection = GameManager.Instance.MoveDir;
+        Debug.Log("Move");   
         if (MoveDirection.x<0)
         {
             GetComponent<SpriteRenderer>().flipX = true;
