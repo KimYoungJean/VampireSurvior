@@ -5,10 +5,12 @@ using UnityEngine;
 
 public class GameScene : MonoBehaviour
 {
-    public GameObject goblinPrefab;
-    public GameObject chickenPrefab;
-    public GameObject wizardPrefab;
-    public GameObject joystickPrefab;
+    public GameObject duckPrefab;
+    public GameObject mushroomPrefab;
+    public GameObject wolfPrefab;
+    public GameObject pigPrefab;
+
+    public GameObject joystricPrefab;
 
     public GameObject Player;
     private GameObject player;
@@ -22,17 +24,20 @@ public class GameScene : MonoBehaviour
     private void Start()
     {
         GameObject monster = new GameObject("Monster");
-        GameObject goblin = Instantiate(goblinPrefab);
-        GameObject chicken = Instantiate(chickenPrefab);
-        GameObject wizard = Instantiate(wizardPrefab);
+        GameObject duck = Instantiate(duckPrefab);
+        GameObject mushroom = Instantiate(mushroomPrefab);
+        GameObject wolf = Instantiate(wolfPrefab);
+        GameObject pig = Instantiate(pigPrefab);
 
-        joystick = Instantiate(joystickPrefab);       
+        joystick = Instantiate(joystricPrefab);       
 
 
         
-        goblin.transform.SetParent(monster.transform);  
-        chicken.transform.parent = monster.transform;
-        wizard.transform.SetParent(monster.transform);
+        duck.transform.SetParent(monster.transform);  
+        mushroom.transform.SetParent(monster.transform);
+        wolf.transform.SetParent(monster.transform);
+        pig.transform.SetParent(monster.transform);
+
 
         player.AddComponent<PlayerController>();
 
