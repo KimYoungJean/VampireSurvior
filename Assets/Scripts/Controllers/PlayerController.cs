@@ -10,43 +10,20 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         transform.position = new Vector3(0, 0, 0);
-        transform.rotation = Quaternion.identity;   
+        transform.rotation = Quaternion.identity;
+
+        GameManager.Instance.onMoveDirChanged+=HandleMoveDirChanged;
         
+    }
+    void HandleMoveDirChanged(Vector2 dir)
+    {
+        MoveDirection = dir;
     }
 
     private void Update()
     {
-        //UpdateInput();
+      
         Move();
-    }
-    void UpdateInput()
-    {
-
-        MoveDirection = Vector2.zero;
-
-        if (Input.GetKey(KeyCode.W))
-        {
-            MoveDirection.y += 1;
-        }
-        if(Input.GetKey(KeyCode.S))
-        {
-            MoveDirection.y -= 1;
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            MoveDirection.x -= 1;
-            GetComponent<SpriteRenderer>().flipX = true;
-
-        }      
-
-        if (Input.GetKey(KeyCode.D))
-        {
-            MoveDirection.x += 1;
-            GetComponent<SpriteRenderer>().flipX = false;
-        }
-
-        MoveDirection.Normalize();
-
     }
 
     void Move()
