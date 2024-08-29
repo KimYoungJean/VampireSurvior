@@ -18,4 +18,11 @@ public class Define
         Effect,
     }   
    
+    public enum PlayerState
+    {
+        Idle,
+        Move,
+        Attack,
+        Die,
+    }
 }

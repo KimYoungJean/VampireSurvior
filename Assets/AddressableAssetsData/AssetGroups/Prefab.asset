@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Prefab
+  m_EditorClassIdentifier: 
+  m_GroupName: Prefab
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 1eacd5f6cfd5e9b4d9c09eceb9a5a6a4
+  m_SerializeEntries:
+  - m_GUID: bb1022e29a6077744bef83ea71f0ec47
+    m_Address: Player.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0b7b3955f8dca894eaa17d1c88fe1516
+    m_Address: Pig.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8943cd4ab05d6234e90b7d12952aa586
+    m_Address: Mushroom.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b357d6a68df73894290afbd83eb7d701
+    m_Address: Duck.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 64ec3ac513dfaee4f9738404134068e7
+    m_Address: Wolf.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: cc16ec54c134d294b9fefb8c7fd91d12, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: c55b6f15a3e7d514983655ed53bd8d2d, type: 2}
+    - {fileID: 11400000, guid: ea9170f8cfb17754da09979b0e6fe91a, type: 2}
