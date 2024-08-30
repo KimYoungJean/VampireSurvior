@@ -25,4 +25,11 @@ public class Define
         Attack,
         Die,
     }
+    public enum ObjectType
+    {
+        Player,
+        Monster,
+        Projectile,
+        Environment,
+    }
 }

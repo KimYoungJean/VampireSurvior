@@ -20,23 +20,33 @@ MonoBehaviour:
   - m_GUID: bb1022e29a6077744bef83ea71f0ec47
     m_Address: Player.prefab
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - Prefabs
   - m_GUID: 0b7b3955f8dca894eaa17d1c88fe1516
     m_Address: Pig.prefab
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - Prefabs
   - m_GUID: 8943cd4ab05d6234e90b7d12952aa586
     m_Address: Mushroom.prefab
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - Prefabs
   - m_GUID: b357d6a68df73894290afbd83eb7d701
     m_Address: Duck.prefab
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - Prefabs
   - m_GUID: 64ec3ac513dfaee4f9738404134068e7
     m_Address: Wolf.prefab
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - Prefabs
+  - m_GUID: 9d4b3fce876dc3d4aa73971f511efd4d
+    m_Address: Joystick.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: cc16ec54c134d294b9fefb8c7fd91d12, type: 2}
   m_SchemaSet:
