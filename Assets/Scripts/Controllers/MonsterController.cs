@@ -12,6 +12,9 @@ public class MonsterController : CreatureController
         }
 
         //초기화가 이루어지지 않았으므로 초기화 작업을 수행한다.
+
+        objectType = Define.ObjectType.Monster;
+
         return true;
     }
 
@@ -49,4 +52,76 @@ public class MonsterController : CreatureController
     true와 false 모두 객체가 초기화된 상태를 나타내지만, true는 이번에 초기화가 이루어졌음을 의미하고, false는 이미 초기화된 상태였음을 나타냅니다. 이 차이를 통해 코드가 보다 명확하게 초기화 상태를 관리할 수 있게 됩니다.
 
      */
+
+    //물리적인 계산은 FixedUpdate에서 처리
+    private void FixedUpdate()
+    {
+        PlayerController player = ObjectManager.instance.Player;
+        if (player == null)
+            return;
+        Vector3 dir = player.transform.position - transform.position;
+
+        Vector3 pos = transform.position + (dir.normalized * Time.deltaTime * moveSpeed);
+
+        GetComponent<Rigidbody2D>().MovePosition(pos);
+        GetComponent<SpriteRenderer>().flipX = dir.x < 0;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        PlayerController target = collision.gameObject.GetComponent<PlayerController>();
+        //여기까지 됨
+        Debug.Log($"OnCollisionExit2D {target}");
+        if (target == null)
+            return;
+
+        if(_coDotDamage != null)
+        {
+            StopCoroutine(_coDotDamage);
+        }
+        
+        _coDotDamage = StartCoroutine(CoDotDamage(target)); 
+
+
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        PlayerController target = collision.gameObject.GetComponent<PlayerController>();
+        if(target == null)
+            return;
+
+        if (_coDotDamage != null)
+        {
+            StopCoroutine(_coDotDamage);
+        }
+        _coDotDamage = null;
+    }
+    Coroutine _coDotDamage;
+
+    public IEnumerator CoDotDamage(PlayerController player)
+    {
+        
+        
+        while (true)
+        {
+            // 데미지 
+            player.OnDamaged(this,2);
+            
+            yield return new WaitForSeconds(0.1f);
+        }
+    }
+
+    protected override void OnDead()
+    {
+        base.OnDead();
+        if(_coDotDamage != null)
+        {
+            StopCoroutine(_coDotDamage);
+        }
+        _coDotDamage = null;
+
+        ObjectManager.instance.Despawn(this);
+    }
+
+    
 }

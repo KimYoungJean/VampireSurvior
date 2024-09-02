@@ -6,7 +6,8 @@ public class BaseController : MonoBehaviour
 {
 
     //protected Set 는 상속 받은 클래스에서만 사용 가능
-    public Define.ObjectType objectType { get; protected set; }
+    public Define.ObjectType objectType { get; protected set; } // 오브젝트 타입은 {플레이어,몬스터,발사체,환경변수 }로 구분
+    
     bool isInitialized = false;
 
     private void Awake()

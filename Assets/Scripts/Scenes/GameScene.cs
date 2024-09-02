@@ -21,22 +21,41 @@ public class GameScene : MonoBehaviour
         });        
         
     }
-    
+
+    /* void Init()
+     {
+
+         var player = ResourceManager.Instance.Instantiate("Player.prefab");
+         player.AddComponent<PlayerController>();
+         Camera.main.GetComponent<CameraController>().target = player.transform;
+
+        var joystick = ResourceManager.Instance.Instantiate("Joystick.prefab");
+
+        var  monster = new GameObject("Monsters");
+        var duck = ResourceManager.Instance.Instantiate("Duck.prefab", monster.transform);
+        var mushroom = ResourceManager.Instance.Instantiate("Mushroom.prefab", monster.transform);
+        var wolf = ResourceManager.Instance.Instantiate("Wolf.prefab", monster.transform);
+        var pig = ResourceManager.Instance.Instantiate("Pig.prefab", monster.transform);
+
+
+     }*/
+
     void Init()
     {
+        var player = ObjectManager.instance.Spawn<PlayerController>();
 
-        var player = ResourceManager.Instance.Instantiate("Player.prefab");
-        player.AddComponent<PlayerController>();
-        Camera.main.GetComponent<CameraController>().target = player.transform;
+        Camera.main.GetComponent<CameraController>().target = player.gameObject;
 
-       var joystick = ResourceManager.Instance.Instantiate("Joystick.prefab");
+        var joystick = ResourceManager.Instance.Instantiate("Joystick.prefab");
 
-       var  monster = new GameObject("Monsters");
-       var duck = ResourceManager.Instance.Instantiate("Duck.prefab", monster.transform);
-       var mushroom = ResourceManager.Instance.Instantiate("Mushroom.prefab", monster.transform);
-       var wolf = ResourceManager.Instance.Instantiate("Wolf.prefab", monster.transform);
-       var pig = ResourceManager.Instance.Instantiate("Pig.prefab", monster.transform);
 
-       
+        for(int i=0; i < 10; i++)
+        {
+            MonsterController monsterController = ObjectManager.instance.Spawn<MonsterController>(Random.Range(0,4));
+            monsterController.transform.position = new Vector3(Random.Range(-10, 10), Random.Range(-10, 10));
+        }
+        
+
+
     }
 }

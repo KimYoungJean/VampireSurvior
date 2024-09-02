@@ -44,6 +44,9 @@ public class ResourceManager : MonoBehaviour
             return null;
         }
 
+        //TODO: pooling 구현
+        if(pooling)
+        { }
         GameObject poolingObject = Object.Instantiate(prefab, parent);
         poolingObject.name = prefab.name;
         return poolingObject;
@@ -58,6 +61,7 @@ public class ResourceManager : MonoBehaviour
         Object.Destroy(gameObject);
 
     }
+
     // 비동기로 리소스를 읽어 오는 함수입니다. 만약 이미 딕셔너리에 리소스가존대한다면 콜백함수만을 호출하고
     // 그렇지 않다면 Addressables.LoadAssetAsync<T>를 통해 리소스를 읽어옵니다.
     // 여기서 x는 

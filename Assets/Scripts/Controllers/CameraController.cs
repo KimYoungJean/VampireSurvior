@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     
-    public Transform target;
+    public GameObject target;
     [SerializeField]
     private float smoothSpeed = 0.0125f;
 
@@ -17,11 +17,11 @@ public class CameraController : MonoBehaviour
 
         transform.position = 
             new Vector3(
-                Mathf.Lerp(transform.position.x,target.position.x,smoothSpeed),
-                Mathf.Lerp(transform.position.y,target.position.y, smoothSpeed),
+                Mathf.Lerp(transform.position.x,target.transform.position.x,smoothSpeed),
+                Mathf.Lerp(transform.position.y,target.transform.position.y, smoothSpeed),
                 transform.position.z);
 
     }
 
-
+    
 }

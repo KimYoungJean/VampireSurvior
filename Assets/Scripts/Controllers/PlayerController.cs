@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerController : CreatureController
 {
     Vector2 MoveDirection = Vector2.zero;
-    float MoveSpeed = 2f;
+    
     Animator animator;
     Define.PlayerState playerState;
 
@@ -13,6 +14,7 @@ public class PlayerController : CreatureController
     {
         transform.position = new Vector3(0, 0, 0);
         transform.rotation = Quaternion.identity;
+      
 
         GameManager.Instance.onMoveDirChanged += HandleMoveDirChanged;
         animator = GetComponent<Animator>();
@@ -20,7 +22,7 @@ public class PlayerController : CreatureController
     }
     void HandleMoveDirChanged(Vector2 dir)
     {
-        Debug.Log("MoveDirChanged");
+        
         MoveDirection = dir;
     }
 
@@ -31,20 +33,17 @@ public class PlayerController : CreatureController
     }
     private void Update()
     {
-
+        Debug.Log($"{CurrentHp}/{MaxHp}");
         Move();
     }
 
     void Move()
     {
         Debug.Log("Move");
-        if (MoveDirection.x < 0)
-        {
-            GetComponent<SpriteRenderer>().flipX = true;
-        }
-        else { GetComponent<SpriteRenderer>().flipX = false; }
 
-        transform.Translate(MoveDirection * MoveSpeed * Time.deltaTime);
+        GetComponent<SpriteRenderer>().flipX = MoveDirection.x < 0;
+
+        transform.Translate(MoveDirection * moveSpeed * Time.deltaTime);
 
         if (MoveDirection != Vector2.zero)
         {
@@ -53,6 +52,7 @@ public class PlayerController : CreatureController
         }
         else
         {
+            GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             playerState = Define.PlayerState.Idle;
             SetAnimator(playerState);
         }
@@ -74,6 +74,23 @@ public class PlayerController : CreatureController
                 break;
         }
     }
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        MonsterController target = collision.gameObject.GetComponent<MonsterController>();
+        if(target == null)
+        {
+            return;
+        }
+    }
+    public override void OnDamaged(BaseController attacker, int Damage)
+    {
+        
+        base.OnDamaged(attacker, Damage);
 
+        Debug.Log($"Player OnDamaged {Damage},{CurrentHp}");
 
-}
+        CreatureController monster = attacker as CreatureController;
+
+        monster?.OnDamaged(this,10000);
+    }
+ }
