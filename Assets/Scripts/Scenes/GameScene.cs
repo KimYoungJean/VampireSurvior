@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class GameScene : MonoBehaviour
 {
-   
+    SpawningPool spawningPool;
 
     private void Start()
     {
@@ -18,8 +18,8 @@ public class GameScene : MonoBehaviour
                 Init();
 
             }
-        });        
-        
+        });
+
     }
 
     /* void Init()
@@ -42,20 +42,20 @@ public class GameScene : MonoBehaviour
 
     void Init()
     {
+
+        spawningPool = gameObject.GetOrAddComponent<SpawningPool>();
+
+        for (int i = 0; i < 10; i++)
+        {
+            MonsterController monsterController = ObjectManager.instance.Spawn<MonsterController>(Random.Range(0, 4));
+            monsterController.transform.position = new Vector3(Random.Range(-10, 10), Random.Range(-10, 10));
+        }
+
         var player = ObjectManager.instance.Spawn<PlayerController>();
 
         Camera.main.GetComponent<CameraController>().target = player.gameObject;
 
         var joystick = ResourceManager.Instance.Instantiate("Joystick.prefab");
-
-
-        for(int i=0; i < 10; i++)
-        {
-            MonsterController monsterController = ObjectManager.instance.Spawn<MonsterController>(Random.Range(0,4));
-            monsterController.transform.position = new Vector3(Random.Range(-10, 10), Random.Range(-10, 10));
-        }
-        
-
 
     }
 }
