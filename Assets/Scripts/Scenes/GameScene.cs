@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class GameScene : MonoBehaviour
 {
-   
+    SpawningPool spawningPool;
 
     private void Start()
     {
@@ -15,12 +15,18 @@ public class GameScene : MonoBehaviour
 
             if (index == totalCount)
             {
-                Init();
-
+                ResourceManager.Instance.LoadAllAsync<TextAsset>("Data", (key, index, totalCount) =>
+                {
+                    Debug.Log($"Loading {key} {index}/{totalCount}");
+                    if (index == totalCount)
+                        Init();
+                });
             }
-        });        
-        
+        });
+
+
     }
+
 
     /* void Init()
      {
@@ -42,20 +48,29 @@ public class GameScene : MonoBehaviour
 
     void Init()
     {
+
+        spawningPool = gameObject.GetOrAddComponent<SpawningPool>();
+
+        for (int i = 0; i < 10; i++)
+        {
+            MonsterController monsterController = ObjectManager.instance.Spawn<MonsterController>(Random.Range(0, 4));
+            monsterController.transform.position = new Vector3(Random.Range(-10, 10), Random.Range(-10, 10));
+        }
+
         var player = ObjectManager.instance.Spawn<PlayerController>();
 
         Camera.main.GetComponent<CameraController>().target = player.gameObject;
 
         var joystick = ResourceManager.Instance.Instantiate("Joystick.prefab");
 
+        DataManager.Instance.Init();
 
-        for(int i=0; i < 10; i++)
+        foreach (var data in DataManager.Instance.playerDic.Values)
         {
-            MonsterController monsterController = ObjectManager.instance.Spawn<MonsterController>(Random.Range(0,4));
-            monsterController.transform.position = new Vector3(Random.Range(-10, 10), Random.Range(-10, 10));
+            
+            Debug.Log($"level:{data.level} maxHp:{data.maxHp} attack:{data.attack} totalExp:{data.totalExp}");
         }
-        
-
-
     }
+
+    
 }

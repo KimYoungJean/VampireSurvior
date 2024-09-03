@@ -9,8 +9,8 @@ public class ObjectManager : MonoBehaviour
 
     public PlayerController Player { get; private set; } //플레이어
 
-    public HashSet<MonsterController> Monsters { get; } = new HashSet<MonsterController>(); //몬스터
-    public HashSet<ProjectileController> Projectiles { get; } = new HashSet<ProjectileController>(); //발사체
+    public HashSet<MonsterController> Monsters { get; } = new HashSet<MonsterController>(); //몬스터 스폰 목록
+    public HashSet<ProjectileController> Projectiles { get; } = new HashSet<ProjectileController>(); //발사체 스폰 목록
     
     
     public T Spawn<T>(int templateID = 0) where T : BaseController
@@ -50,7 +50,7 @@ public class ObjectManager : MonoBehaviour
                     break;
             }
 
-            GameObject monster = ResourceManager.Instance.Instantiate($"{monsterName}.prefab");          
+            GameObject monster = ResourceManager.Instance.Instantiate($"{monsterName}.prefab",pooling:true);          
 
             MonsterController monsterController = monster.GetOrAddComponent<MonsterController>();
             Monsters.Add(monsterController);

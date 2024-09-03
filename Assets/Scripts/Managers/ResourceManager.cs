@@ -45,8 +45,11 @@ public class ResourceManager : MonoBehaviour
         }
 
         //TODO: pooling 구현
-        if(pooling)
-        { }
+        if(pooling) // 오브젝트풀링이 들어간다면 풀링매니저에서 호출하고 리턴.
+        {
+            return PoolManager.instance.Pop(prefab);
+        }
+
         GameObject poolingObject = Object.Instantiate(prefab, parent);
         poolingObject.name = prefab.name;
         return poolingObject;
@@ -58,6 +61,12 @@ public class ResourceManager : MonoBehaviour
         {
             return;
         }
+
+        if(PoolManager.instance.Push(gameObject))
+        {
+            return;
+        }
+
         Object.Destroy(gameObject);
 
     }
