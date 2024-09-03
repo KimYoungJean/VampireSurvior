@@ -70,6 +70,7 @@ public class GameScene : MonoBehaviour
             
             Debug.Log($"level:{data.level} maxHp:{data.maxHp} attack:{data.attack} totalExp:{data.totalExp}");
         }
+
     }
 
     
