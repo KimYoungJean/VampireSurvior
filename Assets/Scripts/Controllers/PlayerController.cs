@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -9,6 +10,8 @@ public class PlayerController : CreatureController
     
     Animator animator;
     Define.PlayerState playerState;
+
+    float interactDistance { get; set; } = 1.0f;
 
     private void Start()
     {
@@ -57,8 +60,21 @@ public class PlayerController : CreatureController
             SetAnimator(playerState);
         }
     }
+    void Interact()
+    {
+        List<GemController> gemList = ObjectManager.instance.Gems.ToList(); //보석 목록을 가져온다.
+        foreach (GemController gem in gemList)
+        {
+            Vector3 dir = gem.transform.position - transform.position;
+            if(dir.magnitude < interactDistance)
+            {
+                GameManager.Instance.Gem += 1;
+              ObjectManager.instance.Despawn(gem);
+            }
+        }
+    }
 
-    public void SetAnimator(Define.PlayerState state)
+        public void SetAnimator(Define.PlayerState state)
     {
         switch (state)
         {
