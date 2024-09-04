@@ -33,8 +33,9 @@ public class SpawningPool : MonoBehaviour
             return;
         }
 
-        MonsterController monsterController = ObjectManager.instance.Spawn<MonsterController>(Random.Range(0, 4));
-        monsterController.transform.position = new Vector3(Random.Range(-10, 10), Random.Range(-10, 10));
+        Vector3 randPos = new Vector3(Random.Range(-10, 10), Random.Range(-10, 10));
+        MonsterController monsterController = ObjectManager.instance.Spawn<MonsterController>(randPos,Random.Range(0, 4));
+        
     }
 }
  

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BaseController : MonoBehaviour
@@ -29,4 +30,15 @@ public class BaseController : MonoBehaviour
         return true;
     }
     // 초기화를 안했으면 (isInitialized가 false이면) 초기화를 하고 true를 반환한다.
+
+    private void Update()
+    {
+        UpdateController();
+    }
+
+    public virtual void UpdateController()
+    {
+
+    }
+
 }

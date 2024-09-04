@@ -30,6 +30,6 @@ public class Define
         Player,
         Monster,
         Projectile,
-        Environment,
+        Interactable,
     }
 }
