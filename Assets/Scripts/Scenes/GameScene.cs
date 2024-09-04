@@ -19,16 +19,7 @@ public class GameScene : MonoBehaviour
                 {
                     Debug.Log($"Loading {key} {index}/{totalCount}");
                     if (index == totalCount)
-                    {
-
-                        ResourceManager.Instance.LoadAllAsync<Sprite>("Sprite", (key, index, totalCount) =>
-                        {
-                            Debug.Log($"Loading {key} {index}/{totalCount}");
-                            if (index == totalCount)
-                                Init();
-                        });                       
-                    
-                    }
+                        Init();
                 });
             }
         });
@@ -57,16 +48,16 @@ public class GameScene : MonoBehaviour
 
     void Init()
     {
-        var player = ObjectManager.instance.Spawn<PlayerController>(Vector3.zero);
 
         spawningPool = gameObject.GetOrAddComponent<SpawningPool>();
 
         for (int i = 0; i < 10; i++)
         {
-            Vector3 randPos = new Vector3(Random.Range(-10, 10), Random.Range(-10, 10));
-            MonsterController monsterController = ObjectManager.instance.Spawn<MonsterController>(randPos, Random.Range(0, 4));            
+            MonsterController monsterController = ObjectManager.instance.Spawn<MonsterController>(Random.Range(0, 4));
+            monsterController.transform.position = new Vector3(Random.Range(-10, 10), Random.Range(-10, 10));
         }
 
+        var player = ObjectManager.instance.Spawn<PlayerController>();
 
         Camera.main.GetComponent<CameraController>().target = player.gameObject;
 

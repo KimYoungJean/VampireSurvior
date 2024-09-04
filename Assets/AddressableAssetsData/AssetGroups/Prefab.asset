@@ -47,11 +47,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - Prefabs
-  - m_GUID: 673ffa7209dbaa04eb7050cd95b61b70
-    m_Address: Gem.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Prefabs
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: cc16ec54c134d294b9fefb8c7fd91d12, type: 2}
   m_SchemaSet:

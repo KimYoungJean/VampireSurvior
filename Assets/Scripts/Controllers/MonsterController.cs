@@ -120,8 +120,6 @@ public class MonsterController : CreatureController
         }
         _coDotDamage = null;
 
-        GemController gemController = ObjectManager.instance.Spawn<GemController>(transform.position);
-
         ObjectManager.instance.Despawn(this);
     }
 
