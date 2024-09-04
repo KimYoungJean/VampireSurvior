@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7731613141071641930}
   - component: {fileID: 6799468372020284659}
   - component: {fileID: 4891053638926048158}
-  - component: {fileID: 319604792046468483}
+  - component: {fileID: -1428294661202097370}
   m_Layer: 0
   m_Name: Pig
   m_TagString: Untagged
@@ -129,8 +129,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &319604792046468483
-BoxCollider2D:
+--- !u!58 &-1428294661202097370
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -142,16 +142,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.15291947, y: 0.4064653}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 2, y: 2}
-    newSize: {x: 2, y: 2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: -0.1, y: 0.4}
   serializedVersion: 2
-  m_Size: {x: 0.6781541, y: 0.43970346}
-  m_EdgeRadius: 0
+  m_Radius: 0.4

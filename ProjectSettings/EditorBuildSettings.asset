@@ -12,4 +12,5 @@ EditorBuildSettings:
     path: Assets/Scenes/LoginScene.unity
     guid: ce1ddba6e2819cc409698e20b4c28dd1
   m_configObjects:
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 3433236285864df4186fac27768972e7, type: 2}
     com.unity.addressableassets: {fileID: 11400000, guid: 1afec365729fda1448965af17c72510d, type: 2}
