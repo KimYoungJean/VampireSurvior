@@ -82,7 +82,13 @@ public class ResourceManager : MonoBehaviour
             return;
         }
 
-        Addressables.LoadAssetAsync<T>(key).Completed += (x) =>
+        string loadKey = key;
+        if (key.Contains(".sprite"))
+        {
+            loadKey = $"{key}[{key.Replace(".sprite", "")}]";
+        }
+
+            Addressables.LoadAssetAsync<T>(loadKey).Completed += (x) =>
         {
             _resources.Add(key, x.Result);
             callback?.Invoke(x.Result);

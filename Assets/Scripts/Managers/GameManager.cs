@@ -7,8 +7,12 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
+    public int Gold { get; set; }
+    public int Gem { get; set; }
+
     public event Action<Vector2> onMoveDirChanged; // 이벤트 선언 : 리턴 x, 파라미터 o
     private Vector2 moveDir;
+        
 
     public Vector2 MoveDir
     {
@@ -23,6 +27,7 @@ public class GameManager : MonoBehaviour
             onMoveDirChanged?.Invoke(moveDir); 
         }
     }
+
 
     private void Awake()
     {
