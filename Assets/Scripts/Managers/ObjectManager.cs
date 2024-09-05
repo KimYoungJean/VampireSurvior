@@ -78,6 +78,8 @@ public class ObjectManager : MonoBehaviour
             Sprite gemSprite = ResourceManager.Instance.Load<Sprite>(Key);
             gemObject.GetComponent<SpriteRenderer>().sprite = gemSprite;
 
+
+            GameObject.Find("Grid").GetComponent<GridController>().Add(gemObject);
             return gemController as T;
         }
 
@@ -107,6 +109,8 @@ public class ObjectManager : MonoBehaviour
         {
             Gems.Remove(target as GemController);
             ResourceManager.Instance.Destroy(target.gameObject);
+
+            GameObject.Find("Grid").GetComponent<GridController>().Remove(target.gameObject);
         }
     }
 

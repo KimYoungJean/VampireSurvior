@@ -11,7 +11,7 @@ public class PlayerController : CreatureController
     Animator animator;
     Define.PlayerState playerState;
 
-    float interactDistance { get; set; } = 1.0f;
+    float interactDistance { get; set; } = 0.5f;
 
     private void Start()
     {
@@ -37,6 +37,7 @@ public class PlayerController : CreatureController
     private void Update()
     {        
         Move();
+        Interact();
     }
 
     void Move()
@@ -59,20 +60,28 @@ public class PlayerController : CreatureController
             SetAnimator(playerState);
         }
     }
+
     void Interact()
     {
         float sqrDistance = interactDistance * interactDistance;
 
         List<GemController> gemList = ObjectManager.instance.Gems.ToList(); //보석 목록을 가져온다.
-        foreach (GemController gem in gemList)
+       
+
+        var findGems = GameObject.Find("Grid").GetComponent<GridController>().GatherObjects(transform.position, interactDistance+0.7f);
+
+        foreach (var gem in findGems)
         {
-            Vector3 dir = gem.transform.position - transform.position;
-            if(dir.sqrMagnitude < sqrDistance)
+            GemController gemController = gem.GetComponent<GemController>();
+
+            Vector3 dir = gemController.transform.position - transform.position;
+            if (dir.sqrMagnitude < sqrDistance)
             {
                 GameManager.Instance.Gem += 1;
-              ObjectManager.instance.Despawn(gem);
+                ObjectManager.instance.Despawn(gemController);
             }
         }
+        Debug.Log($"findGems : {findGems.Count}, TotalGems : {gemList.Count}");
     }
 
         public void SetAnimator(Define.PlayerState state)
