@@ -7,8 +7,12 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
+    #region 재화
     public int Gold { get; set; }
     public int Gem { get; set; }
+    #endregion
+
+    #region 이동
 
     public event Action<Vector2> onMoveDirChanged; // 이벤트 선언 : 리턴 x, 파라미터 o
     private Vector2 moveDir;
@@ -28,6 +32,8 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    #endregion
+
 
     private void Awake()
     {
@@ -42,4 +48,5 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+   
 }

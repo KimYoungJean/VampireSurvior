@@ -35,8 +35,7 @@ public class PlayerController : CreatureController
             GameManager.Instance.onMoveDirChanged -= HandleMoveDirChanged;
     }
     private void Update()
-    {
-        Debug.Log($"{CurrentHp}/{MaxHp}");
+    {        
         Move();
     }
 
@@ -62,11 +61,13 @@ public class PlayerController : CreatureController
     }
     void Interact()
     {
+        float sqrDistance = interactDistance * interactDistance;
+
         List<GemController> gemList = ObjectManager.instance.Gems.ToList(); //보석 목록을 가져온다.
         foreach (GemController gem in gemList)
         {
             Vector3 dir = gem.transform.position - transform.position;
-            if(dir.magnitude < interactDistance)
+            if(dir.sqrMagnitude < sqrDistance)
             {
                 GameManager.Instance.Gem += 1;
               ObjectManager.instance.Despawn(gem);
