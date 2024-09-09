@@ -14,7 +14,7 @@ public class ObjectManager : MonoBehaviour
     public HashSet<GemController> Gems { get; } = new HashSet<GemController>(); //보석 스폰 목록
 
 
-    public T Spawn<T>(Vector3 position ,int templateID = 0) where T : BaseController
+    public T Spawn<T>(Vector3 position, int templateID = 0) where T : BaseController
     {
         System.Type type = typeof(T); //T의 타입을 가져온다.
 
@@ -63,7 +63,7 @@ public class ObjectManager : MonoBehaviour
             return monsterController as T;
 
         }
-        else if (type == typeof(GemController)) 
+        else if (type == typeof(GemController))
         {
             GameObject gemObject = ResourceManager.Instance.Instantiate("Gem.prefab", pooling: true);
             gemObject.transform.position = position;
@@ -81,6 +81,18 @@ public class ObjectManager : MonoBehaviour
 
             GameObject.Find("Grid").GetComponent<GridController>().Add(gemObject);
             return gemController as T;
+        }
+        else if (type == typeof(ProjectileController))
+        {
+            GameObject projectileObject = ResourceManager.Instance.Instantiate("Fireball.prefab", pooling: true);
+            projectileObject.transform.position = position;
+
+            ProjectileController pc = projectileObject.GetOrAddComponent<ProjectileController>();
+            Projectiles.Add(pc);
+            pc.Init();
+
+            return pc as T;
+
         }
 
         return null;
@@ -100,7 +112,7 @@ public class ObjectManager : MonoBehaviour
             Monsters.Remove(target as MonsterController);
             ResourceManager.Instance.Destroy(target.gameObject);
         }
-        else if(type == typeof(ProjectileController))
+        else if (type == typeof(ProjectileController))
         {
             Projectiles.Remove(target as ProjectileController);
             ResourceManager.Instance.Destroy(target.gameObject);
@@ -112,6 +124,12 @@ public class ObjectManager : MonoBehaviour
 
             GameObject.Find("Grid").GetComponent<GridController>().Remove(target.gameObject);
         }
+        else if(type == typeof(ProjectileController))
+        {
+            Projectiles.Remove(target as ProjectileController);
+            ResourceManager.Instance.Destroy (target.gameObject);                
+        }
+      
     }
 
     private void Awake()

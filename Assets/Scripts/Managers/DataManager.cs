@@ -28,12 +28,16 @@ public class DataManager:MonoBehaviour
     }
 
 
-    public Dictionary<int, Data.PlayerData> playerDic { get; private set; } = new Dictionary<int, Data.PlayerData>();
+    public Dictionary<int, Data.PlayerData> PlayerDic { get; private set; } = new Dictionary<int, Data.PlayerData>();
+    public Dictionary<int, Data.SkillData> SkillDic { get; private set; } = new Dictionary<int, Data.SkillData>();
+
 
     public void Init()
     {
         //xml로 데이터불러오기.
-        playerDic = LoadXml<Data.PlayerDataLoader, int, Data.PlayerData>("PlayerData.xml").MakeDict();
+        PlayerDic = LoadXml<Data.PlayerDataLoader, int, Data.PlayerData>("PlayerData.xml").MakeDict();
+        SkillDic = LoadXml<Data.SkillDataLoader, int, Data.SkillData>
+            ("SkillData.xml").MakeDict();
       
 
         //json으로 데이터불러오기.

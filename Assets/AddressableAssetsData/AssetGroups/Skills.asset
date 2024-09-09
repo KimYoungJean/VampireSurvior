@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Skills
+  m_EditorClassIdentifier: 
+  m_GroupName: Skills
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 8ad98b0b1dc153d4e8f1aab5a6f3d8c8
+  m_SerializeEntries:
+  - m_GUID: 5cf1b9bbdb4782c48880d8c98b937195
+    m_Address: AttackDown_1.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs
+  - m_GUID: 7d702b892ace9394a9a119909294c45f
+    m_Address: AttackDown_2.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs
+  - m_GUID: e8ddd4baea7eca5489b7f509f43dc8e0
+    m_Address: AttackLeft_1.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs
+  - m_GUID: 7819ee01cfe239343aff19103b837f16
+    m_Address: AttackRight_1.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs
+  - m_GUID: 92a90d5dc27e26240b6ff239a2163e9c
+    m_Address: AttackUp_1.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs
+  - m_GUID: fbdee419e600c47419c9d01dea57e624
+    m_Address: AttackUp_2.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs
+  - m_GUID: 94718b913f364514db4a26994ea0824a
+    m_Address: Fireball.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs
+  - m_GUID: 4dbc5fbedf99b1447bc7c0f2ee56c8ea
+    m_Address: Poisonarea.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: cc16ec54c134d294b9fefb8c7fd91d12, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 3a442880c546c884aa219e3d31236130, type: 2}
+    - {fileID: 11400000, guid: 7d62be232e9b9e94ea3e1fbb69c9b1c7, type: 2}

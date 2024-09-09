@@ -92,5 +92,44 @@ namespace Data
         // - 어떤 아이템을
         // - 몇개를 드랍할지?
     }
+    #region SkillData
+    public class SkillData
+    {
 
+        [XmlAttribute]
+        public int templateID;
+
+        [XmlAttribute]
+        public string name;
+
+        [XmlAttribute]
+        public Define.SkillType type = Define.SkillType.None;
+
+        [XmlAttribute]
+        public int NextID;
+
+        [XmlAttribute]
+        public string prefab;
+
+        [XmlAttribute]
+        public int damage;
+    }
+    [Serializable, XmlRoot("SkillDatas")]
+    public class SkillDataLoader : ILoader<int, SkillData>
+    {
+        [XmlElement("SkillData")]
+        public List<SkillData> skills = new List<SkillData>();
+
+        public Dictionary<int,SkillData> MakeDict()
+        {
+            Dictionary<int, SkillData>dict = new Dictionary<int, SkillData>();
+            foreach (SkillData skill in skills)
+            {
+
+                dict.Add(skill.templateID, skill);
+            }
+            return dict;
+        }
+    }
+    #endregion
 }

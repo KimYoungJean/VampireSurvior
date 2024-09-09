@@ -74,7 +74,7 @@ public class GameScene : MonoBehaviour
 
         DataManager.Instance.Init();
 
-        foreach (var data in DataManager.Instance.playerDic.Values)
+        foreach (var data in DataManager.Instance.PlayerDic.Values)
         {
             
             Debug.Log($"level:{data.level} maxHp:{data.maxHp} attack:{data.attack} totalExp:{data.totalExp}");

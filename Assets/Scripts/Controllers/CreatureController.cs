@@ -13,6 +13,7 @@ public class CreatureController : BaseController
 
     public virtual void OnDamaged(BaseController attacker, int Damage)
     {
+        Debug.Log($"{attacker}가 {Damage}만큼 데미지를 입힘");
         CurrentHp -= Damage;
         if (CurrentHp <= 0)
         {

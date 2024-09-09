@@ -3,21 +3,21 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Define 
+public class Define
 {
     public enum Scene
-    { 
-    Unknown,
-    DevScene,
-    GameScene,
+    {
+        Unknown,
+        DevScene,
+        GameScene,
     }
 
     public enum Sound
     {
         Bgm,
         Effect,
-    }   
-   
+    }
+
     public enum PlayerState
     {
         Idle,
@@ -32,4 +32,14 @@ public class Define
         Projectile,
         Interactable,
     }
+
+    public enum SkillType
+    {
+        None,
+        Melee,
+        Projectile,
+        Etc,
+
+    }
+
 }

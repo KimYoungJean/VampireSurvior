@@ -7,25 +7,31 @@ using UnityEngine;
 public class PlayerController : CreatureController
 {
     Vector2 MoveDirection = Vector2.zero;
-    
+
     Animator animator;
     Define.PlayerState playerState;
 
     float interactDistance { get; set; } = 0.5f;
 
-    private void Start()
+    public override bool Init()
+    
     {
-        transform.position = new Vector3(0, 0, 0);
-        transform.rotation = Quaternion.identity;
-      
+        if (base.Init() == false)
+            return false;
+
+        moveSpeed = 1.0f;
+              
 
         GameManager.Instance.onMoveDirChanged += HandleMoveDirChanged;
         animator = GetComponent<Animator>();
 
+        StartProjectile();
+
+        return true;
     }
     void HandleMoveDirChanged(Vector2 dir)
     {
-        
+
         MoveDirection = dir;
     }
 
@@ -35,7 +41,7 @@ public class PlayerController : CreatureController
             GameManager.Instance.onMoveDirChanged -= HandleMoveDirChanged;
     }
     private void Update()
-    {        
+    {
         Move();
         Interact();
     }
@@ -66,9 +72,9 @@ public class PlayerController : CreatureController
         float sqrDistance = interactDistance * interactDistance;
 
         List<GemController> gemList = ObjectManager.instance.Gems.ToList(); //보석 목록을 가져온다.
-       
 
-        var findGems = GameObject.Find("Grid").GetComponent<GridController>().GatherObjects(transform.position, interactDistance+0.7f);
+
+        var findGems = GameObject.Find("Grid").GetComponent<GridController>().GatherObjects(transform.position, interactDistance + 0.7f);
 
         foreach (var gem in findGems)
         {
@@ -84,7 +90,7 @@ public class PlayerController : CreatureController
         Debug.Log($"findGems : {findGems.Count}, TotalGems : {gemList.Count}");
     }
 
-        public void SetAnimator(Define.PlayerState state)
+    public void SetAnimator(Define.PlayerState state)
     {
         switch (state)
         {
@@ -103,20 +109,46 @@ public class PlayerController : CreatureController
     public void OnCollisionEnter2D(Collision2D collision)
     {
         MonsterController target = collision.gameObject.GetComponent<MonsterController>();
-        if(target == null)
+        if (target == null)
         {
             return;
         }
     }
     public override void OnDamaged(BaseController attacker, int Damage)
     {
-        
+
         base.OnDamaged(attacker, Damage);
 
         Debug.Log($"Player OnDamaged {Damage},{CurrentHp}");
 
         CreatureController monster = attacker as CreatureController;
 
-        monster?.OnDamaged(this,10000);
+        monster?.OnDamaged(this, 10000);
     }
- }
+
+    #region Fireball
+    Coroutine coFireball;
+    void StartProjectile()
+    {
+        if(coFireball != null)
+        {
+         StopCoroutine(coFireball);   
+        }
+
+        coFireball = StartCoroutine(CoStartProjectile());
+    }
+
+    IEnumerator CoStartProjectile()
+    {
+        WaitForSeconds wait = new WaitForSeconds(1f);
+        while(true)
+        {
+            ProjectileController pc = ObjectManager.instance.Spawn<ProjectileController>(transform.position);
+            pc.SetInfo(1, this, MoveDirection);
+
+            yield return wait;
+        }
+    }
+    #endregion
+
+}
