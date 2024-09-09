@@ -27,7 +27,7 @@ public class ObjectManager : MonoBehaviour
             PlayerController playerController = player.GetOrAddComponent<PlayerController>();
             Player = playerController;
             playerController.Init();
-
+            
             return playerController as T;
         }
         else if (type == typeof(MonsterController))
@@ -90,7 +90,7 @@ public class ObjectManager : MonoBehaviour
             ProjectileController pc = projectileObject.GetOrAddComponent<ProjectileController>();
             Projectiles.Add(pc);
             pc.Init();
-
+            
             return pc as T;
 
         }
@@ -103,6 +103,7 @@ public class ObjectManager : MonoBehaviour
     {
         System.Type type = typeof(T);
 
+                
         if (type == typeof(PlayerController))
         {
 
@@ -111,12 +112,7 @@ public class ObjectManager : MonoBehaviour
         {
             Monsters.Remove(target as MonsterController);
             ResourceManager.Instance.Destroy(target.gameObject);
-        }
-        else if (type == typeof(ProjectileController))
-        {
-            Projectiles.Remove(target as ProjectileController);
-            ResourceManager.Instance.Destroy(target.gameObject);
-        }
+        }       
         else if (type == typeof(GemController))
         {
             Gems.Remove(target as GemController);
@@ -125,11 +121,16 @@ public class ObjectManager : MonoBehaviour
             GameObject.Find("Grid").GetComponent<GridController>().Remove(target.gameObject);
         }
         else if(type == typeof(ProjectileController))
-        {
+        {            
             Projectiles.Remove(target as ProjectileController);
-            ResourceManager.Instance.Destroy (target.gameObject);                
+            ResourceManager.Instance.Destroy (target.gameObject);
         }
-      
+        else if (type == typeof(SkillController))
+        {            
+            Projectiles.Remove(target as ProjectileController);
+            ResourceManager.Instance.Destroy(target.gameObject);
+        }
+
     }
 
     private void Awake()

@@ -1,5 +1,7 @@
+using Data;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -78,6 +80,12 @@ public class GameScene : MonoBehaviour
         {
             
             Debug.Log($"level:{data.level} maxHp:{data.maxHp} attack:{data.attack} totalExp:{data.totalExp}");
+        }
+        foreach (var data in DataManager.Instance.SkillDic.Values)
+        {
+            //
+            Debug.Log($"templateID ={data.templateID}, name = {data.name}, type = {data.type},prefab = {data.prefab}, damage = {data.damage}");
+            
         }
 
     }

@@ -7,20 +7,23 @@ using UnityEngine;
 public class PlayerController : CreatureController
 {
     Vector2 MoveDirection = Vector2.zero;
-
+    [SerializeField]
+    Transform indicator;
+    [SerializeField]
+    Transform fireSocket;
     Animator animator;
     Define.PlayerState playerState;
 
     float interactDistance { get; set; } = 0.5f;
 
     public override bool Init()
-    
+
     {
         if (base.Init() == false)
             return false;
 
-        moveSpeed = 1.0f;
-              
+        moveSpeed = 3.0f;
+
 
         GameManager.Instance.onMoveDirChanged += HandleMoveDirChanged;
         animator = GetComponent<Animator>();
@@ -48,16 +51,17 @@ public class PlayerController : CreatureController
 
     void Move()
     {
-        Debug.Log("Move");
 
         GetComponent<SpriteRenderer>().flipX = MoveDirection.x < 0;
 
-        transform.Translate(MoveDirection * moveSpeed * Time.deltaTime);
+        Vector3 dir = MoveDirection * moveSpeed * Time.deltaTime;
+        transform.Translate(dir);
 
         if (MoveDirection != Vector2.zero)
         {
             playerState = Define.PlayerState.Move;
             SetAnimator(playerState);
+            indicator.eulerAngles = new Vector3(0, 0, Mathf.Atan2(-dir.x, dir.y) * 180 / Mathf.PI);
         }
         else
         {
@@ -130,9 +134,9 @@ public class PlayerController : CreatureController
     Coroutine coFireball;
     void StartProjectile()
     {
-        if(coFireball != null)
+        if (coFireball != null)
         {
-         StopCoroutine(coFireball);   
+            StopCoroutine(coFireball);
         }
 
         coFireball = StartCoroutine(CoStartProjectile());
@@ -140,11 +144,13 @@ public class PlayerController : CreatureController
 
     IEnumerator CoStartProjectile()
     {
-        WaitForSeconds wait = new WaitForSeconds(1f);
-        while(true)
+        WaitForSeconds wait = new WaitForSeconds(0.1f);
+        while (true)
         {
-            ProjectileController pc = ObjectManager.instance.Spawn<ProjectileController>(transform.position);
-            pc.SetInfo(1, this, MoveDirection);
+            ProjectileController pc = ObjectManager.instance.Spawn<ProjectileController>(fireSocket.position, 1);
+            pc.SetInfo(1, this, (fireSocket.position-indicator.position).normalized);
+
+            pc.transform.rotation= indicator.rotation;
 
             yield return wait;
         }

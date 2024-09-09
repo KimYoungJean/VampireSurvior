@@ -5,7 +5,7 @@ using UnityEngine;
 
 public static class Extension
 {
-    public static bool IsVaild(this BaseController baseController)
+    public static bool IsValid(this BaseController baseController)
     {
         return baseController != null && baseController.isActiveAndEnabled;
     }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 //
@@ -30,9 +31,12 @@ public class SkillController : BaseController
     IEnumerator CoDestroy(float delaySecond)
     {
         yield return new WaitForSeconds(delaySecond);
-        if (this.IsVaild())
+        
+        if (this.IsValid())
         {
+            
             ObjectManager.instance.Despawn(this);
+
         }
     }
     #endregion

@@ -71,8 +71,10 @@ public class MonsterController : CreatureController
     {
         PlayerController target = collision.gameObject.GetComponent<PlayerController>();
         //¿©±â±îÁö µÊ
-        Debug.Log($"OnCollisionExit2D {target}");
-        if (target == null)
+
+        if (target.IsValid() == false)
+            return;
+        if (this.IsValid() == false)
             return;
 
         if(_coDotDamage != null)
@@ -87,7 +89,9 @@ public class MonsterController : CreatureController
     private void OnCollisionExit2D(Collision2D collision)
     {
         PlayerController target = collision.gameObject.GetComponent<PlayerController>();
-        if(target == null)
+        if (target.IsValid() == false)
+            return;
+        if (this.IsValid() == false)
             return;
 
         if (_coDotDamage != null)

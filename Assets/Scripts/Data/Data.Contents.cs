@@ -102,7 +102,7 @@ namespace Data
         [XmlAttribute]
         public string name;
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName ="type")]
         public Define.SkillType type = Define.SkillType.None;
 
         [XmlAttribute]
