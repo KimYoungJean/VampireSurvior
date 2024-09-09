@@ -75,8 +75,6 @@ public class PlayerController : CreatureController
     {
         float sqrDistance = interactDistance * interactDistance;
 
-        List<GemController> gemList = ObjectManager.instance.Gems.ToList(); //보석 목록을 가져온다.
-
 
         var findGems = GameObject.Find("Grid").GetComponent<GridController>().GatherObjects(transform.position, interactDistance + 0.7f);
 
@@ -90,8 +88,7 @@ public class PlayerController : CreatureController
                 GameManager.Instance.Gem += 1;
                 ObjectManager.instance.Despawn(gemController);
             }
-        }
-        Debug.Log($"findGems : {findGems.Count}, TotalGems : {gemList.Count}");
+        }        
     }
 
     public void SetAnimator(Define.PlayerState state)
