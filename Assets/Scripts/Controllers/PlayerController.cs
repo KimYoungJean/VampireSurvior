@@ -31,6 +31,7 @@ public class PlayerController : CreatureController
         animator = GetComponent<Animator>();
 
         StartProjectile();
+        StartSword();
 
         return true;
     }
@@ -90,7 +91,7 @@ public class PlayerController : CreatureController
                 GameManager.Instance.Gem += 1;
                 ObjectManager.instance.Despawn(gemController);
             }
-        }        
+        }
     }
 
     public void SetAnimator(Define.PlayerState state)
@@ -147,13 +148,25 @@ public class PlayerController : CreatureController
         while (true)
         {
             ProjectileController pc = ObjectManager.instance.Spawn<ProjectileController>(fireSocket.position, 1);
-            pc.SetInfo(1, this, (fireSocket.position-indicator.position).normalized);
+            pc.SetInfo(1, this, (fireSocket.position - indicator.position).normalized);
 
-            pc.transform.rotation= indicator.rotation;
+            pc.transform.rotation = indicator.rotation;
 
             yield return wait;
         }
     }
     #endregion
+    #region Sword
 
+    SwordController swordController;
+    void StartSword()
+    {
+        if (swordController.IsValid())
+            return;
+        swordController = ObjectManager.instance.Spawn<SwordController>(GameManager.Instance.Player.transform.position, Define.SwordSkillID);
+        swordController.transform.SetParent(GameManager.Instance.Player.transform);
+
+        swordController.ActiveSkill();
+    }
+    #endregion
 }

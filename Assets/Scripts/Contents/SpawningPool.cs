@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpawningPool : MonoBehaviour
 {
-    float spawnTime = 1.0f;
+    float spawnTime = 0.1f;
     int maxSpawnCount = 100;
     Coroutine spawnCoroutine;
 

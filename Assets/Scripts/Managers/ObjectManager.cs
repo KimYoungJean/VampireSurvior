@@ -27,7 +27,7 @@ public class ObjectManager : MonoBehaviour
             PlayerController playerController = player.GetOrAddComponent<PlayerController>();
             Player = playerController;
             playerController.Init();
-            
+
             return playerController as T;
         }
         else if (type == typeof(MonsterController))
@@ -90,14 +90,32 @@ public class ObjectManager : MonoBehaviour
             ProjectileController pc = projectileObject.GetOrAddComponent<ProjectileController>();
             Projectiles.Add(pc);
             pc.Init();
-            
+
             return pc as T;
 
         }
+        else if (typeof(T).IsSubclassOf(typeof(SkillController)))
+        {
+            
+            if (DataManager.Instance.SkillDic.TryGetValue(templateID, out Data.SkillData data) == false)
+            {
+                Debug.LogError($"Skill Controller SetInfo Failed ID:{templateID}");
+                return null;
+            }
 
+            GameObject skillObject = ResourceManager.Instance.Instantiate($"{data.name}.prefab", pooling: true);
+            skillObject.transform.position = position;
+
+            T t = skillObject.GetOrAddComponent<T>();
+          
+
+            return t;
+        }
+        
+        
         return null;
 
-    }
+    } 
 
     public void Despawn<T>(T target) where T : BaseController
     {

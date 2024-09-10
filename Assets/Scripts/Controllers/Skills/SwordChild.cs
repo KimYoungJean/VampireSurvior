@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class SwordChild : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    BaseController player;
+
+    int damage;
+
+    public void SetInfo(BaseController player, int damage)
     {
-        
+        this.player = player;
+        this.damage = damage;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        
+       MonsterController monsterController = other.GetComponent<MonsterController>();
+       if(monsterController.IsValid() ==false)
+        {
+            return;
+        }
+        monsterController.OnDamaged(player,damage);
     }
 }

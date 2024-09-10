@@ -104,8 +104,7 @@ public class MonsterController : CreatureController
 
     public IEnumerator CoDotDamage(PlayerController player)
     {
-        
-        
+                
         while (true)
         {
             // µ¥¹ÌÁö 

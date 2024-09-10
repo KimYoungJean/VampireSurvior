@@ -59,6 +59,8 @@ public class GameScene : MonoBehaviour
 
     void Init()
     {
+        DataManager.Instance.Init();
+
         var player = ObjectManager.instance.Spawn<PlayerController>(Vector3.zero);
 
         spawningPool = gameObject.GetOrAddComponent<SpawningPool>();
@@ -74,7 +76,6 @@ public class GameScene : MonoBehaviour
 
         var joystick = ResourceManager.Instance.Instantiate("Joystick.prefab");
 
-        DataManager.Instance.Init();
 
         foreach (var data in DataManager.Instance.PlayerDic.Values)
         {

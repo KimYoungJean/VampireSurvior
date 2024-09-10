@@ -42,4 +42,5 @@ public class Define
 
     }
 
+    public const int SwordSkillID = 10;
 }

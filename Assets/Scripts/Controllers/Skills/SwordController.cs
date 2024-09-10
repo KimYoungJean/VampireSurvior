@@ -6,7 +6,7 @@ public class SwordController : SkillController
 {
 
     [SerializeField]
-    Animator[] animators;
+    List<GameObject> swordChilds = new List<GameObject>();
 
     protected enum AttackDir
     {
@@ -19,15 +19,23 @@ public class SwordController : SkillController
     public override bool Init()
     {
         base.Init();
+        Debug.Log($"{transform.childCount}¿‘¥œ¥Á");
+        
+        
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            swordChilds.Add(transform.GetChild(i).gameObject);
+        }
 
-        for(int i = 0; i < animators.Length; i++)
+        for (int i = 0; i < swordChilds.Count; i++)
         {
-            animators[i].gameObject.SetActive(false);            
+            swordChilds[i].gameObject.SetActive(false);
         }
-        for(int i = 0; i < animators.Length; i++)
+        for (int i = 0; i < swordChilds.Count; i++)
         {
-            animators[i].gameObject.GetOrAddComponent<SwordChild>().SetInfo(ObjectManager.instance.Player, 100);
+            swordChilds[i].gameObject.GetOrAddComponent<SwordChild>().SetInfo(ObjectManager.instance.Player, 100);
         }
+
         return true;
     }
 
@@ -37,19 +45,26 @@ public class SwordController : SkillController
     }
 
     float CooldownTime = 2.0f;
-    
+
     IEnumerator CoSword()
     {
         while (true)
         {
             yield return new WaitForSeconds(CooldownTime);
 
-            for (int i = 0; i < animators.Length; i++)
+
+
+            for (int i = 0; i < swordChilds.Count; i++)
             {
-                animators[i].gameObject.SetActive(true);
-                animators[i].SetTrigger("Attack");
+                swordChilds[i].gameObject.SetActive(true);
+                swordChilds[i].GetComponent<Animator>().SetTrigger("IsAttack");
             }
-            yield return null;
+            yield return new WaitForSeconds(0.3f);
+            for (int i = 0; i < swordChilds.Count; i++)
+            {
+                swordChilds[i].gameObject.SetActive(false);
+            }
         }
     }
+
 }
