@@ -7,6 +7,7 @@ using UnityEngine;
 public class PlayerController : CreatureController
 {
     Vector2 MoveDirection = Vector2.zero;
+
     [SerializeField]
     Transform indicator;
     [SerializeField]
@@ -26,6 +27,7 @@ public class PlayerController : CreatureController
 
 
         GameManager.Instance.onMoveDirChanged += HandleMoveDirChanged;
+        GameManager.Instance.Player = this.gameObject;
         animator = GetComponent<Animator>();
 
         StartProjectile();

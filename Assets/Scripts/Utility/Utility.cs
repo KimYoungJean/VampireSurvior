@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -64,6 +65,22 @@ public class Utility
             }
         }
         return null;
+    }
+
+    public static Vector2 GenerateMonsterSpawnPosition(Vector2 characterPosition, float minDistance = 10.0f, float maxDistance =20.0f)
+    {
+        //캐릭터를 기준으로 몬스터가 스폰되도록 함
+        float angle = UnityEngine.Random.Range(0,360)*Mathf.Deg2Rad; 
+        float distance = UnityEngine.Random.Range(minDistance, maxDistance);
+        //Deg2Rad는 각도를 라디안으로 변환해주는 상수        
+
+        float xDistance = Mathf.Cos(angle) * distance;
+        float yDistance = Mathf.Sin(angle) * distance;
+
+        Vector2 spawnPosition = characterPosition + new Vector2(xDistance, yDistance);
+
+        return spawnPosition;
+
     }
 }
 

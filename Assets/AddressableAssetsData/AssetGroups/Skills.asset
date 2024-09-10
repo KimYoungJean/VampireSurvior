@@ -17,33 +17,8 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 8ad98b0b1dc153d4e8f1aab5a6f3d8c8
   m_SerializeEntries:
-  - m_GUID: 5cf1b9bbdb4782c48880d8c98b937195
-    m_Address: AttackDown_1.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Prefabs
-  - m_GUID: 7d702b892ace9394a9a119909294c45f
-    m_Address: AttackDown_2.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Prefabs
-  - m_GUID: e8ddd4baea7eca5489b7f509f43dc8e0
-    m_Address: AttackLeft_1.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Prefabs
-  - m_GUID: 7819ee01cfe239343aff19103b837f16
-    m_Address: AttackRight_1.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Prefabs
-  - m_GUID: 92a90d5dc27e26240b6ff239a2163e9c
-    m_Address: AttackUp_1.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Prefabs
-  - m_GUID: fbdee419e600c47419c9d01dea57e624
-    m_Address: AttackUp_2.prefab
+  - m_GUID: 1929a2e6f3802d84196e69d986acbbe9
+    m_Address: Sword.prefab
     m_ReadOnly: 0
     m_SerializedLabels:
     - Prefabs

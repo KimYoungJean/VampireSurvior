@@ -16,8 +16,6 @@ public class GameManager : MonoBehaviour
 
     public event Action<Vector2> onMoveDirChanged; // 이벤트 선언 : 리턴 x, 파라미터 o
     private Vector2 moveDir;
-        
-
     public Vector2 MoveDir
     {
         get
@@ -31,7 +29,7 @@ public class GameManager : MonoBehaviour
             onMoveDirChanged?.Invoke(moveDir); 
         }
     }
-
+    public  GameObject Player;
     #endregion
 
 
