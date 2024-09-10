@@ -62,6 +62,7 @@ public class GameScene : MonoBehaviour
         DataManager.Instance.Init();
 
         var player = ObjectManager.instance.Spawn<PlayerController>(Vector3.zero);
+        
 
         spawningPool = gameObject.GetOrAddComponent<SpawningPool>();
 
@@ -75,6 +76,7 @@ public class GameScene : MonoBehaviour
         Camera.main.GetComponent<CameraController>().target = player.gameObject;
 
         var joystick = ResourceManager.Instance.Instantiate("Joystick.prefab");
+        var map = ResourceManager.Instance.Instantiate("Map_Spring.prefab");
 
 
         foreach (var data in DataManager.Instance.PlayerDic.Values)

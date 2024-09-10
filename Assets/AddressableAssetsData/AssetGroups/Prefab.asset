@@ -52,6 +52,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - Prefabs
+  - m_GUID: 33bd0138ee354ad4a8c4d8617930e3f5
+    m_Address: Map_Spring.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: cc16ec54c134d294b9fefb8c7fd91d12, type: 2}
   m_SchemaSet:
