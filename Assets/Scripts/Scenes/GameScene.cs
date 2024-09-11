@@ -60,6 +60,7 @@ public class GameScene : MonoBehaviour
     void Init()
     {
         DataManager.Instance.Init();
+        UImanager.instance.ShowSceneUI<UI_GameScene>();
 
         var player = ObjectManager.instance.Spawn<PlayerController>(Vector3.zero);
         
@@ -91,7 +92,18 @@ public class GameScene : MonoBehaviour
             
         }
 
+        GameManager.Instance.onGemChanged += (value) =>
+        {
+            Debug.Log($"Gem : {value}");
+        };
     }
 
-    
+    private void OnDestroy()
+    {
+        GameManager.Instance.onGemChanged -= (value) =>
+        {
+            Debug.Log($"Gem : {value}");
+        };
+    }
+
 }

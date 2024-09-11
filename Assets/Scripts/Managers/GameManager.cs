@@ -9,7 +9,19 @@ public class GameManager : MonoBehaviour
 
     #region 재화
     public int Gold { get; set; }
-    public int Gem { get; set; }
+    int _gem = 0;
+
+    public event Action<int> onGemChanged;
+
+    public int Gem
+    {
+        get { return _gem; }
+        set 
+        {
+            _gem = value;
+            onGemChanged?.Invoke(value);
+        }
+    }
     #endregion
 
     #region 이동
@@ -26,10 +38,10 @@ public class GameManager : MonoBehaviour
         {
             moveDir = value;
 
-            onMoveDirChanged?.Invoke(moveDir); 
+            onMoveDirChanged?.Invoke(moveDir);
         }
     }
-    public  GameObject Player;
+    public GameObject Player;
     #endregion
 
 
@@ -46,5 +58,5 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-   
+
 }
