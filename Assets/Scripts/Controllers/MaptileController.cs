@@ -9,19 +9,18 @@ public class MaptileController : MonoBehaviour
         Camera camera = collision.GetComponent<Camera>();
         if (camera == null) return;
 
-        Debug.Log("충돌했습니다");        
-        Vector3 dir = GameManager.Instance.Player.transform.position - transform.position;
+        Vector3 dir = camera.transform.position - transform.position;
 
-        float dirX = dir.x<0 ? -1 : 1;
+        float dirX = dir.x < 0 ? -1 : 1;
         float dirY = dir.y < 0 ? -1 : 1;
 
-        if(Mathf.Abs(dir.x) > Mathf.Abs(dir.y))
+        if (Mathf.Abs(dir.x) > Mathf.Abs(dir.y))
         {
-            transform.Translate(Vector3.right * dirX * 28);
+            transform.Translate(Vector3.right * dirX * 60);
         }
         else
         {
-           transform.Translate(Vector3.up * dirY * 40);
+            transform.Translate(Vector3.up * dirY * 60);
         }
 
     }
