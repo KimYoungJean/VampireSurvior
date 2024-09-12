@@ -9,6 +9,8 @@ public class UI_GameScene : UI_Base
     public TextMeshProUGUI timer;
     public TextMeshProUGUI killCount;
     public Slider gemSlider;
+    public TextMeshProUGUI level;
+    public TextMeshProUGUI gold;
 
     private void OnEnable()
     {
@@ -38,6 +40,14 @@ public class UI_GameScene : UI_Base
     public void SetKillCount(int count)
     {
         killCount.text = $"{count}";
+    }
+    public void SetLevel(int level)
+    {
+        this.level.text = $"{level}";
+    }
+    public void SetGold(int gold)
+    {
+     this.gold.text = $"{gold}";
     }
 
 }

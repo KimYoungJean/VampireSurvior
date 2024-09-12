@@ -13,7 +13,7 @@ public class MonsterController : CreatureController
 
         //초기화가 이루어지지 않았으므로 초기화 작업을 수행한다.
 
-        objectType = Define.ObjectType.Monster;
+        objectType = Define.ObjectType.Monster;        
 
         return true;
     }
@@ -122,7 +122,8 @@ public class MonsterController : CreatureController
             StopCoroutine(_coDotDamage);
         }
         _coDotDamage = null;
-
+        
+        GameManager.Instance.MonsterCount++;        ;
         GemController gemController = ObjectManager.instance.Spawn<GemController>(transform.position);
 
         ObjectManager.instance.Despawn(this);

@@ -8,10 +8,11 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
 
     #region 재화
-    public int Gold { get; set; }
+    
     int _gem = 0;
 
     public event Action<int> onGemChanged;
+    
 
     public int Gem
     {
@@ -20,6 +21,19 @@ public class GameManager : MonoBehaviour
         {
             _gem = value;
             onGemChanged?.Invoke(value);
+        }
+    }
+
+    int _tempGold = 0; 
+    
+    public event Action<int> onGoldChanged;
+    public int tempGold
+    {
+        get { return _tempGold; }
+        set
+        {
+            _tempGold = value;
+            onGoldChanged?.Invoke(value);
         }
     }
     #endregion
@@ -45,6 +59,22 @@ public class GameManager : MonoBehaviour
     #endregion
 
 
+    #region 몬스터처치
+    int _monsterCount = 0;
+    public event Action<int> onMonsterCountChanged;
+    public int MonsterCount
+    {
+        get { return _monsterCount; }
+        set
+        {
+            _monsterCount = value;
+            onMonsterCountChanged?.Invoke(value);
+
+        }
+    }
+    #endregion
+
+    
     private void Awake()
     {
         if (Instance == null)

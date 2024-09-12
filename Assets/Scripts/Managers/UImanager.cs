@@ -30,6 +30,7 @@ public class UImanager : MonoBehaviour
         T ui = ResourceManager.Instance.Instantiate(key, pooling: true).GetOrAddComponent<T>();
 
         UIStack.Push(ui);
+        RefreshTimeScale();
 
         return ui;
     }
@@ -40,6 +41,7 @@ public class UImanager : MonoBehaviour
 
         UI_Base ui = UIStack.Pop();
         ResourceManager.Instance.Destroy(ui.gameObject);
+        RefreshTimeScale();
     }
 
     public T GetSceneUI<T>() where T : UI_Base
@@ -60,5 +62,10 @@ public class UImanager : MonoBehaviour
         baseUI = ui;
 
         return ui;
+    }
+
+    public void RefreshTimeScale()
+    {
+        Time.timeScale = UIStack.Count > 0 ? 0 : 1;
     }
 }

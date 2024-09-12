@@ -34,7 +34,7 @@ public class GameScene : MonoBehaviour
                 });
             }
         });
-
+        
 
     }
 
@@ -92,18 +92,56 @@ public class GameScene : MonoBehaviour
             
         }
 
-        GameManager.Instance.onGemChanged += (value) =>
-        {
-            Debug.Log($"Gem : {value}");
-        };
-    }
 
+        GameManager.Instance.onGemChanged += HandleOnGemCountChanged;        
+        GameManager.Instance.onGoldChanged += HandleOnGoldChanged;  
+        GameManager.Instance.onMonsterCountChanged += HandleOnMonsterCountChanged;
+
+    }
+    int collectedGem = 0;
+    int requiredGem = 10;
+    int level = 1;
+    int collectGold = 0;
+    int killCount;
+
+    public void HandleOnGemCountChanged(int value)
+    {
+        collectedGem++;        
+        if (collectedGem == requiredGem)
+        {
+
+            UImanager.instance.ShowPopup<UI_SkillChoice>();
+            collectedGem = 0;
+            requiredGem *= 2;
+            level++;
+        }
+
+        UImanager.instance.GetSceneUI<UI_GameScene>().SetGemCountRatio((float)collectedGem/requiredGem); //UI_GameScene의 SetGemCountRatio 함수를 호출
+        UImanager.instance.GetSceneUI<UI_GameScene>().SetLevel(level);
+    }
+    public void HandleOnGoldChanged(int value)
+    {
+        collectGold += value;
+        Debug.Log($"{value}추가하여 {collectGold}가 되었습니다.");
+        UImanager.instance.GetSceneUI<UI_GameScene>().SetGold(collectGold);
+
+    }
+    public void HandleOnMonsterCountChanged(int value)
+    {
+        killCount++;
+        if(killCount==10)
+        {
+            //보스등장
+            Debug.Log("Boss");
+        }
+        UImanager.instance.GetSceneUI<UI_GameScene>().SetKillCount(killCount);
+    }
+    
     private void OnDestroy()
     {
-        GameManager.Instance.onGemChanged -= (value) =>
-        {
-            Debug.Log($"Gem : {value}");
-        };
+        if(GameManager.Instance != null)
+        GameManager.Instance.onGemChanged -= HandleOnGemCountChanged;
+
     }
 
 }

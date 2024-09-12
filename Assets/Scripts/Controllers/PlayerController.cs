@@ -84,11 +84,32 @@ public class PlayerController : CreatureController
         foreach (var gem in findGems)
         {
             GemController gemController = gem.GetComponent<GemController>();
+            string coinName = gem.GetComponent<SpriteRenderer>().sprite.name;
+            
+
 
             Vector3 dir = gemController.transform.position - transform.position;
             if (dir.sqrMagnitude < sqrDistance)
             {
-                GameManager.Instance.Gem += 1;
+
+                switch (coinName)
+                {
+                    case "Gem1":
+                        GameManager.Instance.tempGold = 1;
+                        break;
+                    case "Gem2":
+                        GameManager.Instance.tempGold = 5;
+                        break;
+                    case "Gem3":
+                        GameManager.Instance.tempGold = 10;
+                        break;
+                    default:
+                        GameManager.Instance.tempGold = 0;
+                        break;
+                }
+
+                GameManager.Instance.Gem += 1;                
+               
                 ObjectManager.instance.Despawn(gemController);
             }
         }
