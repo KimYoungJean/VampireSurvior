@@ -7,9 +7,10 @@ public class SpawningPool : MonoBehaviour
     float spawnTime = 0.1f;
     int maxSpawnCount = 100;
     Coroutine spawnCoroutine;
+    public bool SpawningPause { get; set; } = false; 
 
 
-    
+
     void Start()
     {
         spawnCoroutine = StartCoroutine(SpawnCoroutine());
@@ -27,6 +28,11 @@ public class SpawningPool : MonoBehaviour
 
     void Spawn()
     {
+        if(SpawningPause==true)
+        {
+            return;
+        }
+
         int monsterCount = ObjectManager.instance.Monsters.Count;
         if (monsterCount >= maxSpawnCount)
         {

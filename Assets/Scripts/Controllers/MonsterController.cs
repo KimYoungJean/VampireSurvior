@@ -1,19 +1,77 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class MonsterController : CreatureController
 {
+
+    #region StatePattern
+    Define.MonsterState _state = Define.MonsterState.Move;
+    public virtual Define.MonsterState State
+    {
+        get { return _state; }
+        set
+        {
+            _state = value;            
+            UpdateAnimation();
+        }
+    }
+
+    protected Animator _animator;
+    public virtual void UpdateAnimation()
+    {
+
+    }
+
+    public override void UpdateController()
+    {
+        base.UpdateController();
+        switch (State)
+        {
+            case Define.MonsterState.Idle:
+                UpdateIdle();
+                break;
+            case Define.MonsterState.Move:
+                UpdateMove();
+                break;
+            case Define.MonsterState.Attack:
+                UpdateAttack();
+                break;
+            case Define.MonsterState.Death:
+                UpdateDeath();
+                break;
+        }
+    }
+    protected virtual void UpdateIdle()
+    {
+        
+    }
+    protected virtual void UpdateMove()
+    {
+
+    }
+    protected virtual void UpdateAttack()
+    {
+
+    }
+    protected virtual void UpdateDeath()
+    {
+
+    }
+    #endregion
     public override bool Init()
     {
-        if(base.Init()) 
+
+
+        if (base.Init())
         {
             return false; // 이미 초기화를 했으므로 false를 반환한다.
         }
 
-        //초기화가 이루어지지 않았으므로 초기화 작업을 수행한다.
+        State = Define.MonsterState.Move;
 
-        objectType = Define.ObjectType.Monster;        
+        objectType = Define.ObjectType.Monster;
 
         return true;
     }
@@ -77,12 +135,12 @@ public class MonsterController : CreatureController
         if (this.IsValid() == false)
             return;
 
-        if(_coDotDamage != null)
+        if (_coDotDamage != null)
         {
             StopCoroutine(_coDotDamage);
         }
-        
-        _coDotDamage = StartCoroutine(CoDotDamage(target)); 
+
+        _coDotDamage = StartCoroutine(CoDotDamage(target));
 
 
     }
@@ -104,12 +162,12 @@ public class MonsterController : CreatureController
 
     public IEnumerator CoDotDamage(PlayerController player)
     {
-                
+
         while (true)
         {
             // 데미지 
-            player.OnDamaged(this,2);
-            
+            player.OnDamaged(this, 2);
+
             yield return new WaitForSeconds(0.1f);
         }
     }
@@ -117,17 +175,17 @@ public class MonsterController : CreatureController
     protected override void OnDead()
     {
         base.OnDead();
-        if(_coDotDamage != null)
+        if (_coDotDamage != null)
         {
             StopCoroutine(_coDotDamage);
         }
         _coDotDamage = null;
-        
-        GameManager.Instance.MonsterCount++;        ;
+
+        GameManager.Instance.MonsterCount++; ;
         GemController gemController = ObjectManager.instance.Spawn<GemController>(transform.position);
 
         ObjectManager.instance.Despawn(this);
     }
 
-    
+
 }

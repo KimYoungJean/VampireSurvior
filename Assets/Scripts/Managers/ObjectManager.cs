@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -47,6 +48,9 @@ public class ObjectManager : MonoBehaviour
                     break;
                 case 3:
                     monsterName = "Pig";
+                    break;
+                case Define.BOSS01_ID:
+                    monsterName = "Boss01";
                     break;
                 default:
                     monsterName = "Duck";
@@ -150,8 +154,17 @@ public class ObjectManager : MonoBehaviour
         }
 
     }
+    public void DespawnAllMonster()
+    {
+        var monsters = Monsters.ToList();
+        foreach (var monster in monsters)
+        {
+            Despawn(monster);
 
-    private void Awake()
+        }
+    }
+
+        private void Awake()
     {
         if (instance == null)
         {

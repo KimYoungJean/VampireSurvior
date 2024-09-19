@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Data;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Diagnostics;
 
 public class GameScene : MonoBehaviour
 {
@@ -57,6 +58,32 @@ public class GameScene : MonoBehaviour
 
      }*/
 
+    Define.StageType _stageType;
+    public Define.StageType StageType
+    {
+        get { return _stageType; }
+        set
+        {
+            _stageType = value;
+
+            if(spawningPool != null)
+            {
+                switch (value)
+                {
+                    case Define.StageType.Normal:
+                        spawningPool.SpawningPause = false;
+                        break;
+                    case Define.StageType.Boss:
+                        spawningPool.SpawningPause = true;
+                        break;
+
+                }
+
+            }
+
+
+        }
+    }
     void Init()
     {
         DataManager.Instance.Init();
@@ -129,10 +156,16 @@ public class GameScene : MonoBehaviour
     public void HandleOnMonsterCountChanged(int value)
     {
         killCount++;
-        if(killCount==10)
+        if(killCount==20)
         {
             //보스등장
-            Debug.Log("Boss");
+            StageType = Define.StageType.Boss;
+            ObjectManager.instance.DespawnAllMonster();
+
+            Vector2 spawnPos = Utility.GenerateMonsterSpawnPosition(GameManager.Instance.Player.transform.position, 5.0f, 10.0f);
+
+            ObjectManager.instance.Spawn<MonsterController>(spawnPos, Define.BOSS01_ID);
+
         }
         UImanager.instance.GetSceneUI<UI_GameScene>().SetKillCount(killCount);
     }
