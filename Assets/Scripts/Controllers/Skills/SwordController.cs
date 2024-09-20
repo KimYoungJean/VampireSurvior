@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SwordController : SkillController
+public class SwordController : RepeatSkill
 {
+
+
 
     [SerializeField]
     List<GameObject> swordChilds = new List<GameObject>();
@@ -18,8 +20,7 @@ public class SwordController : SkillController
 
     public override bool Init()
     {
-        base.Init();
-        Debug.Log($"{transform.childCount}¿‘¥œ¥Á");
+        base.Init();       
         
         
         for (int i = 0; i < transform.childCount; i++)
@@ -39,7 +40,7 @@ public class SwordController : SkillController
         return true;
     }
 
-    public void ActiveSkill()
+    public override void ActiveSkill()
     {
         StartCoroutine(CoSword());
     }
@@ -67,4 +68,8 @@ public class SwordController : SkillController
         }
     }
 
+    protected override void DoSkillJob()
+    {
+        throw new System.NotImplementedException();
+    }
 }

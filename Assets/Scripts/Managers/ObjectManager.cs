@@ -98,7 +98,7 @@ public class ObjectManager : MonoBehaviour
             return pc as T;
 
         }
-        else if (typeof(T).IsSubclassOf(typeof(SkillController)))
+        else if (typeof(T).IsSubclassOf(typeof(SkillBase)))
         {
             
             if (DataManager.Instance.SkillDic.TryGetValue(templateID, out Data.SkillData data) == false)
@@ -152,7 +152,7 @@ public class ObjectManager : MonoBehaviour
             Projectiles.Remove(target as ProjectileController);
             ResourceManager.Instance.Destroy (target.gameObject);
         }
-        else if (type == typeof(SkillController))
+        else if (type == typeof(SkillBase))
         {            
             Projectiles.Remove(target as ProjectileController);
             ResourceManager.Instance.Destroy(target.gameObject);

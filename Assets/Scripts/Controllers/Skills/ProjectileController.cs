@@ -3,12 +3,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ProjectileController : SkillController
+public class ProjectileController : SkillBase
 {
+    
     CreatureController player;
     Vector3 moveDir;
     float spped = 10.0f;
     float lifeTime = 1.0f;
+
+    public ProjectileController() : base(Define.SkillType.Projectile)
+    {
+    }
 
     public override bool Init()
     {

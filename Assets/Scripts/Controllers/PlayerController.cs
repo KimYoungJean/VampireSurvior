@@ -12,6 +12,11 @@ public class PlayerController : CreatureController
     Transform indicator;
     [SerializeField]
     Transform fireSocket;
+
+    public Transform Indicator { get { return indicator; } }
+    public Vector3 FireSocket { get { return fireSocket.position; } }
+    public Vector3 ShootDir { get { return (fireSocket.position - indicator.position).normalized; } }
+
     Animator animator;
     Define.PlayerState playerState;
 
@@ -30,8 +35,8 @@ public class PlayerController : CreatureController
         GameManager.Instance.Player = this.gameObject;
         animator = GetComponent<Animator>();
 
-        StartProjectile();
-        StartSword();
+     /*   StartProjectile();
+        StartSword();*/
 
         return true;
     }
@@ -150,7 +155,7 @@ public class PlayerController : CreatureController
 
         monster?.OnDamaged(this, 10000);
     }
-
+/*
     #region Fireball
     Coroutine coFireball;
     void StartProjectile()
@@ -189,5 +194,5 @@ public class PlayerController : CreatureController
 
         swordController.ActiveSkill();
     }
-    #endregion
+    #endregion*/
 }

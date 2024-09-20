@@ -43,9 +43,11 @@ public class Define
     public enum SkillType
     {
         None,
-        Melee,
-        Projectile,
+        Sequence,//돌진 공격
+        Repeat,//반복공격
         Etc,
+        Projectile,
+        Melee,
 
     }
 
