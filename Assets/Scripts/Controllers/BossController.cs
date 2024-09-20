@@ -101,6 +101,8 @@ public class BossController : MonsterController
     {
         State = Define.MonsterState.Death;
         Wait(2.0f);
+        Debug.Log("보스가 죽었습니다.");
+        ObjectManager.instance.Despawn(this);
        
     }
 }

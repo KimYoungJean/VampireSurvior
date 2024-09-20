@@ -134,7 +134,12 @@ public class ObjectManager : MonoBehaviour
         {
             Monsters.Remove(target as MonsterController);
             ResourceManager.Instance.Destroy(target.gameObject);
-        }       
+        }     
+        else if(type == typeof(BossController))
+        {
+            Monsters.Remove(target as BossController);
+            ResourceManager.Instance.Destroy(target.gameObject);
+        }
         else if (type == typeof(GemController))
         {
             Gems.Remove(target as GemController);
