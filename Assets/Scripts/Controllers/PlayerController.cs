@@ -15,7 +15,7 @@ public class PlayerController : CreatureController
 
     public Transform Indicator { get { return indicator; } }
     public Vector3 FireSocket { get { return fireSocket.position; } }
-    public Vector3 ShootDir { get { return (fireSocket.position - indicator.position).normalized; } }
+    public Vector3 ShootDir { get { return (fireSocket.position-transform.position).normalized; } }
 
     Animator animator;
     Define.PlayerState playerState;
@@ -37,6 +37,11 @@ public class PlayerController : CreatureController
 
      /*   StartProjectile();
         StartSword();*/
+
+        // 스킬 세팅
+        // 다음에 UI와 연동할수 있게 작업해야함.
+        Skills.AddSkill<FireballSkill>(Indicator.position);
+        Skills.AddSkill<SwordController>(transform.position, gameObject.transform);
 
         return true;
     }

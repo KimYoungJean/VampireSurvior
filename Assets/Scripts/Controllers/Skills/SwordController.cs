@@ -29,7 +29,7 @@ public class SwordController : RepeatSkill
         }
 
         for (int i = 0; i < swordChilds.Count; i++)
-        {
+        { 
             swordChilds[i].gameObject.SetActive(false);
         }
         for (int i = 0; i < swordChilds.Count; i++)

@@ -59,5 +59,7 @@ public class Define
     
 
     public const int SwordSkillID = 10;
+    public const int FireballSkillID = 20;
+
     public const int BOSS01_ID = 1001;
 }

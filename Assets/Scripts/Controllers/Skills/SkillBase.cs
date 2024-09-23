@@ -31,9 +31,10 @@ public class SkillBase : BaseController
     }
     protected virtual void GenerateProjectile(int templateID, CreatureController owner, Vector3 startPos, Vector3 dir, Vector3 targetPos)
     {
-        ProjectileController projectile = ObjectManager.instance.Spawn<ProjectileController>(startPos, templateID);
+        ProjectileController projectile = ObjectManager.instance.Spawn<ProjectileController>(startPos, templateID);  
 
-        projectile.SetInfo(templateID,owner,dir);
+       
+        projectile.SetInfo(templateID, owner, dir);
     }
 
     #region Destroy
