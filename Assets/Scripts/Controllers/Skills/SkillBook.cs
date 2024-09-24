@@ -41,11 +41,50 @@ public class SkillBook : MonoBehaviour
             return fireball as T;
 
         }
-        else
+        else if(type.IsSubclassOf(typeof(SequenceSkill)))
         {
+            var skill = gameObject.GetOrAddComponent<T>(); 
+            Skills.Add(skill);
+            SequenceSkills.Add(skill as SequenceSkill);
+
+            return skill as T;  
 
         }
 
         return null;
+
     }
+
+    int _sequenceIndex = 0;
+
+    public void StartNextSequenceSkill()
+    {
+        if (_isStopped)
+        {
+            return;
+        }
+        if (SequenceSkills.Count == 0) return;
+
+        SequenceSkills[_sequenceIndex].DoSkill(OnFinishiedSequenceSkill);
+
+    }
+
+    void OnFinishiedSequenceSkill()
+    {
+        _sequenceIndex = (_sequenceIndex + 1) % SequenceSkills.Count; // 스킬이 반복될수 있게, 나머지 연산을 통해 인덱스를 계산한다.
+        StartNextSequenceSkill();
+    }
+
+    bool _isStopped = false;
+
+    public void StopSkill()
+    {
+        _isStopped = true;
+
+        foreach (var skill in RepeatSkills)
+        {
+            skill.StopAllCoroutines();
+        }
+    }
+
 }

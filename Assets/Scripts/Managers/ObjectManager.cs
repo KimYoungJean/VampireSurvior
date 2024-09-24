@@ -101,6 +101,7 @@ public class ObjectManager : MonoBehaviour
         else if (typeof(T).IsSubclassOf(typeof(SkillBase)))
         {
             
+            
             if (DataManager.Instance.SkillDic.TryGetValue(templateID, out Data.SkillData data) == false)
             {
                 Debug.LogError($"Skill Controller SetInfo Failed ID:{templateID}");

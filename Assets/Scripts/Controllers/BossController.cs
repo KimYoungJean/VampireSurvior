@@ -9,9 +9,17 @@ public class BossController : MonsterController
         base.Init();
         _animator = GetComponent<Animator>();
 
-        State = Define.MonsterState.Move;
         MaxHp = 10000;
         CurrentHp = MaxHp;
+
+
+        State = Define.MonsterState.Attack;
+
+        Skills.AddSkill<Move>(transform.position);
+        Skills.AddSkill<Dash>(transform.position) ;
+        Skills.AddSkill<Dash>(transform.position);
+        Skills.AddSkill<Dash>(transform.position);
+        Skills.StartNextSequenceSkill();
         return true;
     }
     
@@ -27,7 +35,7 @@ public class BossController : MonsterController
                 _animator.Play("Move"); 
                 break;
             case Define.MonsterState.Attack:
-                _animator.Play("Attack");
+                
                 break;
             case Define.MonsterState.Death:
                 _animator.Play("Death");
@@ -35,7 +43,7 @@ public class BossController : MonsterController
         }
     }
     
-    float range = 5.0f;
+  /*  float range = 5.0f;
     protected override void UpdateMove()
     {
         PlayerController pc = GameManager.Instance.Player.GetComponent<PlayerController>();
@@ -63,7 +71,7 @@ public class BossController : MonsterController
         }
         
 
-    }
+    }*/
     protected override void UpdateDeath()
     {
         if (_coroutine == null)
